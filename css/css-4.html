@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>css的三大特性 | 一穷的技术文档</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/assets/img/hero.png">
+    <meta name="description" content="一穷的技术文档">
+    
+    <link rel="preload" href="/assets/css/0.styles.495d9abf.css" as="style"><link rel="preload" href="/assets/js/app.d65094bb.js" as="script"><link rel="preload" href="/assets/js/2.0899eaf2.js" as="script"><link rel="preload" href="/assets/js/17.5a7edb7b.js" as="script"><link rel="prefetch" href="/assets/js/10.84ee6588.js"><link rel="prefetch" href="/assets/js/11.7f56cb3f.js"><link rel="prefetch" href="/assets/js/12.3c8098c8.js"><link rel="prefetch" href="/assets/js/13.676de54f.js"><link rel="prefetch" href="/assets/js/14.4303d122.js"><link rel="prefetch" href="/assets/js/15.62d65c4f.js"><link rel="prefetch" href="/assets/js/16.81d9114e.js"><link rel="prefetch" href="/assets/js/18.42a31cea.js"><link rel="prefetch" href="/assets/js/19.a3ea8948.js"><link rel="prefetch" href="/assets/js/20.c4e574a7.js"><link rel="prefetch" href="/assets/js/21.61095d56.js"><link rel="prefetch" href="/assets/js/22.b2cb0e1d.js"><link rel="prefetch" href="/assets/js/23.cf624b42.js"><link rel="prefetch" href="/assets/js/24.10773fdd.js"><link rel="prefetch" href="/assets/js/25.bc9bcd8b.js"><link rel="prefetch" href="/assets/js/26.84a12ea2.js"><link rel="prefetch" href="/assets/js/27.20132d5f.js"><link rel="prefetch" href="/assets/js/28.4d0f29ae.js"><link rel="prefetch" href="/assets/js/29.efbef2cf.js"><link rel="prefetch" href="/assets/js/3.40887c2e.js"><link rel="prefetch" href="/assets/js/30.3a223816.js"><link rel="prefetch" href="/assets/js/31.383df2a0.js"><link rel="prefetch" href="/assets/js/32.53d4bc53.js"><link rel="prefetch" href="/assets/js/33.b87d2fd0.js"><link rel="prefetch" href="/assets/js/34.4b7f2c68.js"><link rel="prefetch" href="/assets/js/35.27769cfd.js"><link rel="prefetch" href="/assets/js/36.66896910.js"><link rel="prefetch" href="/assets/js/37.2330bc70.js"><link rel="prefetch" href="/assets/js/4.9686c1c3.js"><link rel="prefetch" href="/assets/js/5.ec4b3f90.js"><link rel="prefetch" href="/assets/js/6.27888615.js"><link rel="prefetch" href="/assets/js/7.bb36fb71.js"><link rel="prefetch" href="/assets/js/8.4563cd2b.js"><link rel="prefetch" href="/assets/js/9.c734c7d0.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.495d9abf.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/assets/img/hero.png" alt="一穷的技术文档" class="logo"> <span class="site-name can-hide">一穷的技术文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="目录" class="dropdown-title"><span class="title">目录</span> <span class="arrow down"></span></button> <button type="button" aria-label="目录" class="mobile-dropdown-title"><span class="title">目录</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/html/html-1.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/css/css-3.html" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/javascript/js01/js01.html" class="nav-link">
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/css/.html" class="nav-link">
+  node.js
+</a></li><li class="dropdown-item"><!----> <a href="/php/php.html" class="nav-link">
+  php
+</a></li><li class="dropdown-item"><!----> <a href="/vuex/vue01.html" class="nav-link">
+  Vuex
+</a></li><li class="dropdown-item"><!----> <a href="/Webpack/Webpack01.html" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/net/net01.html" class="nav-link">
+  计算机网络
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试资料" class="dropdown-title"><span class="title">面试资料</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试资料" class="mobile-dropdown-title"><span class="title">面试资料</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/interview/html.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/interview/css.html" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/interview/js.html" class="nav-link">
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/interview/ES6.html" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/interview/vue.html" class="nav-link">
+  Vue
+</a></li></ul></div></div><div class="nav-item"><a href="/note/note1.html" class="nav-link">
+  学习笔记
+</a></div><div class="nav-item"><a href="/selfme.html" class="nav-link">
+  关于我
+</a></div><div class="nav-item"><a href="https://github.com/xxfuturexx" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="目录" class="dropdown-title"><span class="title">目录</span> <span class="arrow down"></span></button> <button type="button" aria-label="目录" class="mobile-dropdown-title"><span class="title">目录</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/html/html-1.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/css/css-3.html" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/javascript/js01/js01.html" class="nav-link">
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/css/.html" class="nav-link">
+  node.js
+</a></li><li class="dropdown-item"><!----> <a href="/php/php.html" class="nav-link">
+  php
+</a></li><li class="dropdown-item"><!----> <a href="/vuex/vue01.html" class="nav-link">
+  Vuex
+</a></li><li class="dropdown-item"><!----> <a href="/Webpack/Webpack01.html" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/net/net01.html" class="nav-link">
+  计算机网络
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试资料" class="dropdown-title"><span class="title">面试资料</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试资料" class="mobile-dropdown-title"><span class="title">面试资料</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/interview/html.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/interview/css.html" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/interview/js.html" class="nav-link">
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/interview/ES6.html" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/interview/vue.html" class="nav-link">
+  Vue
+</a></li></ul></div></div><div class="nav-item"><a href="/note/note1.html" class="nav-link">
+  学习笔记
+</a></div><div class="nav-item"><a href="/selfme.html" class="nav-link">
+  关于我
+</a></div><div class="nav-item"><a href="https://github.com/xxfuturexx" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/css/css-3.html" class="sidebar-link">css的概念及其作用</a></li><li><a href="/css/css-4.html" aria-current="page" class="active sidebar-link">css的三大特性</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/css/css-4.html#样式表的书写位置" class="sidebar-link">样式表的书写位置</a></li><li class="sidebar-sub-header"><a href="/css/css-4.html#标签的三种显示模式" class="sidebar-link">标签的三种显示模式</a></li><li class="sidebar-sub-header"><a href="/css/css-4.html#复合选择器" class="sidebar-link">复合选择器</a></li><li class="sidebar-sub-header"><a href="/css/css-4.html#背景" class="sidebar-link">背景</a></li><li class="sidebar-sub-header"><a href="/css/css-4.html#css的三大特性-2" class="sidebar-link">css的三大特性</a></li></ul></li><li><a href="/css/css-5.html" class="sidebar-link">css权重叠加盒子模型</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="css的三大特性"><a href="#css的三大特性" class="header-anchor">#</a> css的三大特性</h1> <h2 id="样式表的书写位置"><a href="#样式表的书写位置" class="header-anchor">#</a> 样式表的书写位置</h2> <blockquote><p>样式表可以有三种书写方式，分别分为</p></blockquote> <ol><li>内嵌式样式表</li> <li>外链式样式表</li> <li>行内式样式表</li></ol> <h3 id="内嵌式样式表"><a href="#内嵌式样式表" class="header-anchor">#</a> 内嵌式样式表</h3> <blockquote><p>内嵌式样式表是在html里面嵌套一个style标签，将css语句都写在style标签里面</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>&lt;style&gt;
+	css语句
+&lt;/style&gt;
+</code></pre></div><h3 id="外链式样式表"><a href="#外链式样式表" class="header-anchor">#</a> 外链式样式表</h3> <blockquote><p>单独创建一个后缀名为.css的文件，在html文件里面通过link标签引入css文件</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;css文件的地址&quot; /&gt;
+</code></pre></div><h3 id="行内式样式表"><a href="#行内式样式表" class="header-anchor">#</a> 行内式样式表</h3> <blockquote><p>将样式直接写在标签本身上，以属性的形式存在</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>&lt;div style=&quot;color:green; font-size:20px;&quot;&gt;&lt;/div&gt;
+</code></pre></div><h3 id="三种样式表总结"><a href="#三种样式表总结" class="header-anchor">#</a> 三种样式表总结</h3> <table><thead><tr><th>样式表</th> <th>优点</th> <th>缺点</th> <th>使用情况</th> <th>控制范围</th></tr></thead> <tbody><tr><td>行内式样式表</td> <td>书写方便，权重高</td> <td>没有实现样式和结构相分离</td> <td>较少</td> <td>控制一个标签（少）</td></tr> <tr><td>内嵌式样式表</td> <td>部分结构和样式相分离</td> <td>没有彻底分离</td> <td>较多</td> <td>控制一个页面（中）</td></tr> <tr><td>外链式样式表</td> <td>完全实现结构和样式相分离</td> <td>需要引入</td> <td>最多，强烈推荐</td> <td>控制整个站点（多）</td></tr></tbody></table> <h2 id="标签的三种显示模式"><a href="#标签的三种显示模式" class="header-anchor">#</a> 标签的三种显示模式</h2> <h3 id="块级元素"><a href="#块级元素" class="header-anchor">#</a> 块级元素</h3> <ol><li>可设置宽和高</li> <li>独占一行</li> <li>默认宽度是父级标签的宽度</li> <li>块级元素一般用于包裹其他块级或者行内元素</li> <li>p这种段落标签不要嵌套块级元素</li></ol> <div class="language- extra-class"><pre class="language-text"><code>代表标签：div,p,ol,li,ul,dt,dd,dl,header,footer,aside,nav,article,section
+display:block;
+</code></pre></div><h3 id="行内元素"><a href="#行内元素" class="header-anchor">#</a> 行内元素</h3> <ol><li>设置宽高无效</li> <li>行内标签允许其他的行内标签排一排</li> <li>尽量不要用行内元素包裹块级元素 a链接除外</li></ol> <div class="language- extra-class"><pre class="language-text"><code>代表标签：a,span,b,u,s,i,strong,ins,del,em
+display:inline
+</code></pre></div><h3 id="行内块元素"><a href="#行内块元素" class="header-anchor">#</a> 行内块元素</h3> <ol><li>行内块标签其实本质上是一种特殊的行内标签 （text-align和line-height都可以控制行内块元素）</li> <li>允许其他的行内元素排一排</li> <li>可以设置宽高</li></ol> <div class="language- extra-class"><pre class="language-text"><code>代表标签：input,img
+display:inline-block
+</code></pre></div><p>注：一般实际工作来说标签不需要进行转换，因为大多数情况下都可以选择对应的标签来实现需求 行内块较为特殊！！</p> <h2 id="复合选择器"><a href="#复合选择器" class="header-anchor">#</a> 复合选择器</h2> <ol><li>交集选择器</li></ol> <div class="language- extra-class"><pre class="language-text"><code>既又原则 
+例如：p.box {}  既是p标签 又有box类名
+</code></pre></div><ol start="2"><li>并集选择器</li></ol> <div class="language- extra-class"><pre class="language-text"><code>将多个选择器合并在一起 
+例如： div,p,h1 {}  
+</code></pre></div><ol start="3"><li>后代选择器</li></ol> <div class="language- extra-class"><pre class="language-text"><code>空格前面的元素和后面的元素必须是嵌套关系 
+例如：.father .houdai {}
+</code></pre></div><ol start="4"><li>子代选择器</li></ol> <div class="language- extra-class"><pre class="language-text"><code>&gt; 前面的元素和后面的元素必须是父子关系 
+例如：.father &gt; .son {}
+</code></pre></div><h3 id="测试题"><a href="#测试题" class="header-anchor">#</a> 测试题</h3> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>nav<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>    <span class="token comment">&lt;!-- 主导航栏 --&gt;</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>公司首页<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>公司简介<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>公司产品<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>
+         <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>联系我们<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+		 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+		    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>公司邮箱<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+		    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>公司电话<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+		 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>sitenav<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>    <span class="token comment">&lt;!-- 侧导航栏 --&gt;</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>site-l<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>左侧侧导航栏<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>site-r<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>登录<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>在不修改以上代码的前提下，完成以下任务：</p> <ol><li>链接 登录 的颜色为红色,同时主导航栏里面的所有的链接改为蓝色     (简单)</li> <li>主导航栏和侧导航栏里面文字都是14像素并且是微软雅黑。（中等)</li> <li>主导航栏里面的一级菜单链接文字颜色为绿色。（难)</li></ol> <h2 id="背景"><a href="#背景" class="header-anchor">#</a> 背景</h2> <h3 id="背景颜色"><a href="#背景颜色" class="header-anchor">#</a> 背景颜色</h3> <div class="language- extra-class"><pre class="language-text"><code>background-color: red; 
+
+颜色可以设置成十六进制 或者 rgb 或者 rgba 
+</code></pre></div><h3 id="背景图片"><a href="#背景图片" class="header-anchor">#</a> 背景图片</h3> <div class="language- extra-class"><pre class="language-text"><code>background-image: url(图片路径);
+</code></pre></div><h3 id="背景平铺"><a href="#背景平铺" class="header-anchor">#</a> 背景平铺</h3> <div class="language- extra-class"><pre class="language-text"><code>background-repeat: 背景平铺;
+
+1.repeat 平铺  默认的
+2.no-repeat 不平铺
+3.repeat-x 水平平铺
+4.repeat-y 垂直平铺
+</code></pre></div><h3 id="背景是否滚动"><a href="#背景是否滚动" class="header-anchor">#</a> 背景是否滚动</h3> <div class="language- extra-class"><pre class="language-text"><code>background-attachment: 背景是否滚动;
+
+1.scroll  默认值 图片跟随盒子一起滚动
+2.fixed	  图片不跟随盒子一起滚动
+</code></pre></div><h3 id="背景位置"><a href="#背景位置" class="header-anchor">#</a> 背景位置</h3> <div class="language- extra-class"><pre class="language-text"><code>background-position: 背景位置;
+
+1.方位名词 right top left center bottom 书写的顺序不论
+2.像素 如果是像素 那么默认在以“当前盒子”的左上角为0 0原点 构建一个坐标系 第一值是X轴的位置 第二个值是Y轴的位置 交互的点就是图片开始显示的起始位置
+	多说一嘴：
+	1、程序里面的坐标系X轴水平向右  Y轴垂直向下
+	2、注意顺序
+3.百分比  百分比参照的自身盒子的宽高： 最终的位置是当前盒子自身的宽高的百分比 - 图片自身的宽高的百分比
+4.还可以混写 混写是需要考虑顺序
+</code></pre></div><h3 id="背景的简写"><a href="#背景的简写" class="header-anchor">#</a> 背景的简写</h3> <div class="language- extra-class"><pre class="language-text"><code>background:背景颜色 背景图片地址 背景平铺 背景滚动 背景位置;
+
+如：background: #fff url() no-repeat scroll center center;
+</code></pre></div><h3 id="img和背景图片的区别"><a href="#img和背景图片的区别" class="header-anchor">#</a> img和背景图片的区别：</h3> <div class="language- extra-class"><pre class="language-text"><code>img不需要专门写宽高就能够显示在页面上
+而背景图片默认是撑不开容器的 需要专门写宽高
+一般产品插入图都推荐使用img  而一些小的icon 或者很少更新的图片 再或者超大的图片推荐使用背景图
+而且背景图可以让内部的文字盖在上面，但是img不行（除非后期用定位）
+</code></pre></div><h2 id="css的三大特性-2"><a href="#css的三大特性-2" class="header-anchor">#</a> css的三大特性</h2> <h3 id="继承性"><a href="#继承性" class="header-anchor">#</a> 继承性</h3> <blockquote><p>后代元素会继承祖先元素的一些样式 跟文字相关属性可以继承 color  font-  line-  text- 可以继承  块元素可以继承父级元素的宽度，高度不继承</p></blockquote> <ul><li>注意：a链接颜色不予继承，需要单独写</li> <li>注意：如果元素自身有该css样式，那么该样式不予继承</li></ul> <div class="language- extra-class"><pre class="language-text"><code>&lt;div class=&quot;father&quot;&gt;
+	爸爸
+	&lt;div class=&quot;son&quot;&gt;
+		儿子
+		&lt;div class=&quot;grandson&quot;&gt;孙子&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</code></pre></div><h3 id="层叠性"><a href="#层叠性" class="header-anchor">#</a> 层叠性</h3> <blockquote><p>后渲染的css样式会覆盖掉先渲染的css样式 （权重相同的情况下）
+注意：层叠性真针对css的书写位置，类的调用位置先后会它没有影响</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>&lt;style&gt;
+	.box1 {
+		/* 最终绿色起效果 */
+		color: red;
+		color: green;
+	}
+&lt;/style&gt;
+
+&lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+</code></pre></div><h3 id="优先级-权重"><a href="#优先级-权重" class="header-anchor">#</a> 优先级（权重）</h3> <blockquote><p>不同的选择器之间会有不同的优先级</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>继承 &lt; 通配符 &lt; 标签选择器 &lt; 类选择器 &lt; ID选择器 &lt; 行内样式 &lt;　!important
+</code></pre></div><h3 id="权重叠加"><a href="#权重叠加" class="header-anchor">#</a> 权重叠加</h3> <h3 id="css特殊性-specificity"><a href="#css特殊性-specificity" class="header-anchor">#</a> CSS特殊性（Specificity）</h3> <p>关于CSS权重，我们需要一套计算公式来去计算，这个就是 CSS Specificity，我们称为CSS 特性或称非凡性，它是一个衡量CSS值优先级的一个标准 具体规范入如下：</p> <p>specificity用一个四位的数 字串(CSS2是三位)来表示，更像四个级别，值从左到右，左面的最大，一级大于一级，数位之间没有进制，级别之间不可超越。</p> <table><thead><tr><th>继承或者* 的贡献值</th> <th>0,0,0,0</th></tr></thead> <tbody><tr><td>每个元素（标签）贡献值为</td> <td>0,0,0,1</td></tr> <tr><td>每个类，伪类贡献值为</td> <td>0,0,1,0</td></tr> <tr><td>每个ID贡献值为</td> <td>0,1,0,0</td></tr> <tr><td>每个行内样式贡献值</td> <td>1,0,0,0</td></tr> <tr><td>每个!important贡献值</td> <td>正无穷</td></tr></tbody></table> <div class="language- extra-class"><pre class="language-text"><code>权重是可以叠加的
+
+比如的例子：
+
+div ul  li   ------&gt;      0,0,0,3
+.nav ul li   ------&gt;      0,0,1,2
+a:hover      -----—&gt;      0,0,1,1
+.nav a       ------&gt;      0,0,1,1   
+#nav p       ------&gt;      0,1,0,1
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最近一次更新时间:</span> <span class="time">2021年12月6日 00:14</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/css/css-3.html" class="prev">
+        css的概念及其作用
+      </a></span> <span class="next"><a href="/css/css-5.html">
+        css权重叠加盒子模型
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.d65094bb.js" defer></script><script src="/assets/js/2.0899eaf2.js" defer></script><script src="/assets/js/17.5a7edb7b.js" defer></script>
+  </body>
+</html>

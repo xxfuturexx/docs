@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>流程控制 | 一穷的技术文档</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/assets/img/hero.png">
+    <meta name="description" content="一穷的技术文档">
+    
+    <link rel="preload" href="/assets/css/0.styles.495d9abf.css" as="style"><link rel="preload" href="/assets/js/app.d65094bb.js" as="script"><link rel="preload" href="/assets/js/2.0899eaf2.js" as="script"><link rel="preload" href="/assets/js/29.efbef2cf.js" as="script"><link rel="prefetch" href="/assets/js/10.84ee6588.js"><link rel="prefetch" href="/assets/js/11.7f56cb3f.js"><link rel="prefetch" href="/assets/js/12.3c8098c8.js"><link rel="prefetch" href="/assets/js/13.676de54f.js"><link rel="prefetch" href="/assets/js/14.4303d122.js"><link rel="prefetch" href="/assets/js/15.62d65c4f.js"><link rel="prefetch" href="/assets/js/16.81d9114e.js"><link rel="prefetch" href="/assets/js/17.5a7edb7b.js"><link rel="prefetch" href="/assets/js/18.42a31cea.js"><link rel="prefetch" href="/assets/js/19.a3ea8948.js"><link rel="prefetch" href="/assets/js/20.c4e574a7.js"><link rel="prefetch" href="/assets/js/21.61095d56.js"><link rel="prefetch" href="/assets/js/22.b2cb0e1d.js"><link rel="prefetch" href="/assets/js/23.cf624b42.js"><link rel="prefetch" href="/assets/js/24.10773fdd.js"><link rel="prefetch" href="/assets/js/25.bc9bcd8b.js"><link rel="prefetch" href="/assets/js/26.84a12ea2.js"><link rel="prefetch" href="/assets/js/27.20132d5f.js"><link rel="prefetch" href="/assets/js/28.4d0f29ae.js"><link rel="prefetch" href="/assets/js/3.40887c2e.js"><link rel="prefetch" href="/assets/js/30.3a223816.js"><link rel="prefetch" href="/assets/js/31.383df2a0.js"><link rel="prefetch" href="/assets/js/32.53d4bc53.js"><link rel="prefetch" href="/assets/js/33.b87d2fd0.js"><link rel="prefetch" href="/assets/js/34.4b7f2c68.js"><link rel="prefetch" href="/assets/js/35.27769cfd.js"><link rel="prefetch" href="/assets/js/36.66896910.js"><link rel="prefetch" href="/assets/js/37.2330bc70.js"><link rel="prefetch" href="/assets/js/4.9686c1c3.js"><link rel="prefetch" href="/assets/js/5.ec4b3f90.js"><link rel="prefetch" href="/assets/js/6.27888615.js"><link rel="prefetch" href="/assets/js/7.bb36fb71.js"><link rel="prefetch" href="/assets/js/8.4563cd2b.js"><link rel="prefetch" href="/assets/js/9.c734c7d0.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.495d9abf.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/assets/img/hero.png" alt="一穷的技术文档" class="logo"> <span class="site-name can-hide">一穷的技术文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="目录" class="dropdown-title"><span class="title">目录</span> <span class="arrow down"></span></button> <button type="button" aria-label="目录" class="mobile-dropdown-title"><span class="title">目录</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/html/html-1.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/css/css-3.html" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/javascript/js01/js01.html" class="nav-link">
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/javascript/js01/.html" class="nav-link">
+  node.js
+</a></li><li class="dropdown-item"><!----> <a href="/php/php.html" class="nav-link">
+  php
+</a></li><li class="dropdown-item"><!----> <a href="/vuex/vue01.html" class="nav-link">
+  Vuex
+</a></li><li class="dropdown-item"><!----> <a href="/Webpack/Webpack01.html" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/net/net01.html" class="nav-link">
+  计算机网络
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试资料" class="dropdown-title"><span class="title">面试资料</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试资料" class="mobile-dropdown-title"><span class="title">面试资料</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/interview/html.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/interview/css.html" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/interview/js.html" class="nav-link">
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/interview/ES6.html" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/interview/vue.html" class="nav-link">
+  Vue
+</a></li></ul></div></div><div class="nav-item"><a href="/note/note1.html" class="nav-link">
+  学习笔记
+</a></div><div class="nav-item"><a href="/selfme.html" class="nav-link">
+  关于我
+</a></div><div class="nav-item"><a href="https://github.com/xxfuturexx" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="目录" class="dropdown-title"><span class="title">目录</span> <span class="arrow down"></span></button> <button type="button" aria-label="目录" class="mobile-dropdown-title"><span class="title">目录</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/html/html-1.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/css/css-3.html" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/javascript/js01/js01.html" class="nav-link">
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/javascript/js01/.html" class="nav-link">
+  node.js
+</a></li><li class="dropdown-item"><!----> <a href="/php/php.html" class="nav-link">
+  php
+</a></li><li class="dropdown-item"><!----> <a href="/vuex/vue01.html" class="nav-link">
+  Vuex
+</a></li><li class="dropdown-item"><!----> <a href="/Webpack/Webpack01.html" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/net/net01.html" class="nav-link">
+  计算机网络
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试资料" class="dropdown-title"><span class="title">面试资料</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试资料" class="mobile-dropdown-title"><span class="title">面试资料</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/interview/html.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/interview/css.html" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/interview/js.html" class="nav-link">
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/interview/ES6.html" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/interview/vue.html" class="nav-link">
+  Vue
+</a></li></ul></div></div><div class="nav-item"><a href="/note/note1.html" class="nav-link">
+  学习笔记
+</a></div><div class="nav-item"><a href="/selfme.html" class="nav-link">
+  关于我
+</a></div><div class="nav-item"><a href="https://github.com/xxfuturexx" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/javascript/js01/js01.html" class="sidebar-link">开发工具</a></li><li><a href="/javascript/js01/js02.html" aria-current="page" class="active sidebar-link">流程控制</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/javascript/js01/js02.html#顺序结构" class="sidebar-link">顺序结构</a></li><li class="sidebar-sub-header"><a href="/javascript/js01/js02.html#分支结构" class="sidebar-link">分支结构</a></li><li class="sidebar-sub-header"><a href="/javascript/js01/js02.html#循环结构" class="sidebar-link">循环结构</a></li><li class="sidebar-sub-header"><a href="/javascript/js01/js02.html#第1个分支语句-if语句" class="sidebar-link">第1个分支语句 : if语句</a></li><li class="sidebar-sub-header"><a href="/javascript/js01/js02.html#第2个分支语句-三元运算符" class="sidebar-link">第2个分支语句 : 三元运算符</a></li><li class="sidebar-sub-header"><a href="/javascript/js01/js02.html#第3个分支语句-switch语句" class="sidebar-link">第3个分支语句 :switch语句</a></li><li class="sidebar-sub-header"><a href="/javascript/js01/js02.html#使用场景" class="sidebar-link">使用场景</a></li><li class="sidebar-sub-header"><a href="/javascript/js01/js02.html#第1个循环语句-while循环" class="sidebar-link">第1个循环语句 : while循环</a></li><li class="sidebar-sub-header"><a href="/javascript/js01/js02.html#第2个循环语句-do-while循环" class="sidebar-link">第2个循环语句 : do..while循环</a></li><li class="sidebar-sub-header"><a href="/javascript/js01/js02.html#第3个循环语句-for循环-重点" class="sidebar-link">第3个循环语句 : for循环  (重点)</a></li><li class="sidebar-sub-header"><a href="/javascript/js01/js02.html#break和continue" class="sidebar-link">break和continue</a></li><li class="sidebar-sub-header"><a href="/javascript/js01/js02.html#总结" class="sidebar-link">总结 :</a></li><li class="sidebar-sub-header"><a href="/javascript/js01/js02.html#为什么要进行类型转换" class="sidebar-link">为什么要进行类型转换???</a></li><li class="sidebar-sub-header"><a href="/javascript/js01/js02.html#查看变量的类型" class="sidebar-link">查看变量的类型</a></li><li class="sidebar-sub-header"><a href="/javascript/js01/js02.html#转换成-数值-number" class="sidebar-link">转换成 数值 -number</a></li><li class="sidebar-sub-header"><a href="/javascript/js01/js02.html#转换成-字符串类型-string" class="sidebar-link">转换成 字符串类型 - string</a></li><li class="sidebar-sub-header"><a href="/javascript/js01/js02.html#转换成布尔类型" class="sidebar-link">转换成布尔类型</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="流程控制"><a href="#流程控制" class="header-anchor">#</a> 流程控制</h1> <p><strong>为什么要学习流程控制</strong></p> <blockquote><p>实际项目中, 不可能都是简单的顺序结构(从上往下执行),  会出现不同的条件, 就要根据条件不同做出相应的处理</p></blockquote> <blockquote><p>程序的三种基本结构</p></blockquote> <h2 id="顺序结构"><a href="#顺序结构" class="header-anchor">#</a> 顺序结构</h2> <ul><li><p>从上到下执行的代码就是顺序结构</p></li> <li><p>程序默认就是从上到下,一行一行的顺序执行的</p></li> <li><div class="language-js extra-class"><pre class="language-js"><code>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;哈哈1&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;哈哈2&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;哈哈3&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div></li> <li><p><img src="/assets/js-img/%E9%A1%BA%E5%BA%8F%E7%BB%93%E6%9E%84.png" alt=""></p></li></ul> <h2 id="分支结构"><a href="#分支结构" class="header-anchor">#</a> 分支结构</h2> <ul><li><p><strong>分支结构,</strong>   也叫<strong>选择结构</strong> , 根据不同的情况,,执行对应的代码</p> <p>​</p></li> <li><p><img src="/assets/js-img/%E5%88%86%E6%94%AF%E7%BB%93%E6%9E%84.png" alt=""></p></li></ul> <h2 id="循环结构"><a href="#循环结构" class="header-anchor">#</a> 循环结构</h2> <ul><li>循环结构：重复做一件事情</li> <li><img src="/assets/js-img/%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84.png" alt=""></li></ul> <h1 id="分支语句-3个"><a href="#分支语句-3个" class="header-anchor">#</a> 分支语句 (3个)</h1> <blockquote><p>分支语句目的 : 解决不同条件不同效果的问题</p></blockquote> <h2 id="第1个分支语句-if语句"><a href="#第1个分支语句-if语句" class="header-anchor">#</a> 第1个分支语句 : if语句</h2> <ul><li><p>单独的if语句    ==&gt; 可能性只有一种</p> <div class="language-js {} extra-class"><pre class="language-js"><code><span class="token comment">// 语法</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>条件<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 只有当条件为 true 时,执行代码</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> age <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>age <span class="token operator">&gt;=</span> <span class="token number">18</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'可以访问该网站'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>​</p></li> <li><p>if..else 语句  ==&gt; 可能性有2种</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 语法</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>条件<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 当条件为 true 时执行的代码</span>
+<span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 当条件不为 true 时执行的代码</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> age <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>age <span class="token operator">&gt;=</span> <span class="token number">18</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'可以访问该网站'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'不可以玩王者荣耀'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>​</p></li> <li><p>if..else if ..else 语句   ==&gt; 可能性有2种以上</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">if</span> <span class="token punctuation">(</span>条件<span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 当条件1为  true 时执行的代码</span>
+<span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>条件<span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">// 当条件2 为true 时执行的代码</span>
+<span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 当条件1和 条件2 都不为true 时执行的代码</span>
+<span class="token punctuation">}</span>
+
+  <span class="token keyword">var</span> age <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">if</span><span class="token punctuation">(</span>age <span class="token operator">&gt;=</span> <span class="token number">18</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;准玩王者荣耀&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>age <span class="token operator">&gt;</span> <span class="token number">12</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;可以玩王者荣耀2个小时&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token punctuation">{</span>
+
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;不可以玩王者荣耀&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token punctuation">}</span>
+
+</code></pre></div></li></ul> <hr> <p>练习 :</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token number">1.</span> 判断一个数是偶数还是奇数
+<span class="token number">2.</span> 判断年龄大于等于<span class="token number">14</span><span class="token punctuation">,</span>并且 <span class="token parameter">是个男孩就可以玩吃鸡了</span> <span class="token operator">=&gt;</span> <span class="token operator">&amp;&amp;</span>
+   判断年龄大于等于 <span class="token number">14</span> <span class="token punctuation">,</span>或者是个女孩<span class="token punctuation">,</span><span class="token punctuation">,</span><span class="token parameter">就可以报舞蹈班了</span> <span class="token operator">=&gt;</span> <span class="token operator">||</span>	
+<span class="token number">3.</span> 素质教育，把百分制分数转换成<span class="token constant">ABCDE</span>   
+  	<span class="token constant">A</span><span class="token operator">:</span> <span class="token number">90</span><span class="token operator">-</span><span class="token number">100</span>
+  	<span class="token constant">B</span><span class="token operator">:</span> <span class="token number">80</span><span class="token operator">-</span><span class="token number">89</span>
+      <span class="token constant">C</span><span class="token operator">:</span> <span class="token number">70</span><span class="token operator">-</span><span class="token number">79</span>
+      <span class="token constant">D</span><span class="token operator">:</span> <span class="token number">60</span><span class="token operator">-</span><span class="token number">69</span>
+      <span class="token constant">E</span><span class="token operator">:</span> <span class="token number">0</span><span class="token operator">-</span><span class="token number">59</span>
+</code></pre></div><h2 id="第2个分支语句-三元运算符"><a href="#第2个分支语句-三元运算符" class="header-anchor">#</a> 第2个分支语句 : 三元运算符</h2> <div class="language-js extra-class"><pre class="language-js"><code>条件 <span class="token operator">?</span> 值<span class="token number">1</span> <span class="token operator">:</span> 值<span class="token number">2</span>    <span class="token comment">/*或者*/</span>   条件 <span class="token operator">?</span> 表达式<span class="token number">1</span> <span class="token operator">:</span> 表达式<span class="token number">2</span>  
+<span class="token number">1.</span> 三元运算符会得到一个结果，结果根据<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">条件</span><span class="token template-punctuation string">`</span></span>来确定。
+<span class="token number">2.</span> 如果<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">条件</span><span class="token template-punctuation string">`</span></span>的值为<span class="token boolean">true</span>，会返回表达式<span class="token number">1</span>的值<span class="token operator">/</span>值<span class="token number">1</span>
+<span class="token number">3.</span> 如果<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">条件</span><span class="token template-punctuation string">`</span></span>的值为<span class="token boolean">false</span>，会返回表达式<span class="token number">2</span>的值<span class="token operator">/</span>值<span class="token number">2</span>
+</code></pre></div><p>案例 :</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//求两个数的最大值</span>
+<span class="token keyword">var</span> max <span class="token operator">=</span> n1 <span class="token operator">&gt;</span> n2 <span class="token operator">?</span> n1 <span class="token operator">:</span> n2<span class="token punctuation">;</span>
+
+<span class="token comment">//思考1：求两个数的最小值</span>
+<span class="token comment">//思考2：判断成年还是未成年, 并返回字符串</span>
+<span class="token comment">//思考3：求三个数的最小值</span>
+</code></pre></div><h2 id="第3个分支语句-switch语句"><a href="#第3个分支语句-switch语句" class="header-anchor">#</a> 第3个分支语句 :switch语句</h2> <blockquote><p>if..else适用于范围的判断，switch..case适用于具体的值的判断</p></blockquote> <p>语法格式 :</p> <blockquote><p>switch case break default</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">switch</span> <span class="token punctuation">(</span>变量<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">case</span> 值<span class="token number">1</span><span class="token operator">:</span>
+    语句<span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token keyword">break</span><span class="token punctuation">;</span>
+  <span class="token keyword">case</span> 值<span class="token number">2</span><span class="token operator">:</span>
+    语句<span class="token number">2</span><span class="token punctuation">;</span>
+    <span class="token keyword">break</span><span class="token punctuation">;</span>
+  <span class="token keyword">case</span> 值<span class="token number">3</span><span class="token operator">:</span>
+    语句<span class="token number">3</span><span class="token punctuation">;</span>
+    <span class="token keyword">break</span><span class="token punctuation">;</span>
+  …
+  <span class="token keyword">default</span><span class="token operator">:</span>
+    默认语句<span class="token punctuation">;</span>
+    <span class="token keyword">break</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>注意 :</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">break</span>可以省略，如果省略，代码会继续执行下一个<span class="token keyword">case</span>
+<span class="token keyword">switch</span> 语句在比较值时使用的是全等操作符<span class="token punctuation">,</span> 因此不会发生类型转换（例如，字符串<span class="token string">'10'</span> 不等于数值 <span class="token number">10</span>）
+</code></pre></div><p>案例 :</p> <div class="language-js extra-class"><pre class="language-js"><code>输入一个数字，显示星期几
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//思考题：</span>
+<span class="token keyword">var</span> num <span class="token operator">=</span> <span class="token string">&quot;10&quot;</span><span class="token punctuation">;</span> <span class="token comment">// 10</span>
+<span class="token keyword">switch</span> <span class="token punctuation">(</span>num<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">case</span> <span class="token number">10</span><span class="token operator">:</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;10&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span> <span class="token number">20</span><span class="token operator">:</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;20&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">case</span> <span class="token number">30</span><span class="token operator">:</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;30&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">default</span><span class="token operator">:</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;lalala&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="使用场景"><a href="#使用场景" class="header-anchor">#</a> 使用场景</h2> <ol><li>如果是范围性的判断，使用if..else会更加方便</li> <li>如果是对具体值的判断，使用switch..case语句会更加方便，当然用if..else也是可以的。</li> <li>如果if..else比较简单，可以使用三元运算符进行替代。</li></ol> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//练习1：土豪的儿子, 输入ABCDE </span>
+	<span class="token comment">//如果考了A：  买法拉利</span>
+	<span class="token comment">//如果考了B：  买宝马</span>
+	<span class="token comment">//如果考了C：  买三轮</span>
+	<span class="token comment">//如果考了D：  买摩拜自行车</span>
+	<span class="token comment">//如果考了E：  断绝父子关系</span>
+	<span class="token comment">//如果是其他值，提示代码有bug</span>
+
+<span class="token comment">//练习2： 买手机，输入自己的工资</span>
+   <span class="token comment">//如果超过30000:  买苹果手机</span>
+   <span class="token comment">//如果10000-30000： 买vivo手机</span>
+   <span class="token comment">//如果5000-10000 ： 买魅族手机</span>
+   <span class="token comment">//如果低于5000   ： 还买个锤子</span>
+
+<span class="token comment">//练习3： 输入自己的每月薪资</span>
+	<span class="token comment">//如果超过15000  : 高富帅</span>
+    <span class="token comment">//如果不超过      ：穷矮丑</span>
+</code></pre></div><h1 id="循环语句-3个"><a href="#循环语句-3个" class="header-anchor">#</a> 循环语句 (3个)</h1> <blockquote><p>在javascript中，循环语句有三种，while、do..while、for循环。</p> <p>循环语句的目的 : 解决需要重复执行某些语句的代码</p></blockquote> <h2 id="第1个循环语句-while循环"><a href="#第1个循环语句-while循环" class="header-anchor">#</a> 第1个循环语句 : while循环</h2> <p><img src="/assets/js-img/while.png" alt=""></p> <p>基本语法 :</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//当循环条件为true时，执行循环体，</span>
+<span class="token comment">//当循环条件为false时，结束循环。</span>
+<span class="token keyword">while</span><span class="token punctuation">(</span>循环条件<span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token comment">//循环体：需要循环执行的语句</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>代码示例:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//1. 打印1-100之间所有的数</span>
+<span class="token comment">//2. 计算1-100之间所有数的和</span>
+<span class="token comment">// 初始化变量</span>
+<span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> sum <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token keyword">while</span><span class="token punctuation">(</span>i <span class="token operator">&lt;=</span> <span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token comment">//判断条件</span>
+  sum <span class="token operator">+=</span> i<span class="token punctuation">;</span><span class="token comment">//循环体</span>
+  i<span class="token operator">++</span><span class="token punctuation">;</span><span class="token comment">//自增，修改循环条件（不能省略）</span>
+<span class="token punctuation">}</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>sum<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>练习 :</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//1. 计算100内所有偶数的和</span>
+<span class="token comment">//2. 让用户输入用户名，只有当用户名='xmg' 否则一直弹框   ==&gt; 循环体是什么????</span>
+<span class="token comment">//3. 循环表白案例, 爱我吗?? 不爱一直循环问下去,,直接爱结束</span>
+</code></pre></div><h2 id="第2个循环语句-do-while循环"><a href="#第2个循环语句-do-while循环" class="header-anchor">#</a> 第2个循环语句 : do..while循环</h2> <blockquote><p>do..while循环和while循环非常像，二者经常可以相互替代，但是do..while的特点是不管条件成不成立，都会执行一次。</p></blockquote> <p><img src="/assets/js-img/dowhile.png" alt=""></p> <p>基础语法 :</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">do</span> <span class="token punctuation">{</span>
+   <span class="token comment">//循环体;</span>
+<span class="token punctuation">}</span><span class="token keyword">while</span><span class="token punctuation">(</span>条件<span class="token punctuation">)</span>
+</code></pre></div><p>代码示例 :</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//初始化变量</span>
+<span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> sum <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token keyword">do</span><span class="token punctuation">{</span>
+  sum <span class="token operator">+=</span> i<span class="token punctuation">;</span><span class="token comment">//循环体</span>
+  i<span class="token operator">++</span><span class="token punctuation">;</span><span class="token comment">//自增</span>
+<span class="token punctuation">}</span><span class="token keyword">while</span><span class="token punctuation">(</span>i <span class="token operator">&lt;=</span> <span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//循环条件</span>
+</code></pre></div><p>练习:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 1. 计算所有偶数的和</span>
+
+课后练习<span class="token operator">:</span>
+<span class="token comment">// 2. 循环输入用户名的案例用do..while怎么写？</span>
+<span class="token comment">// 3. 循环表白的案例用do..while怎么写？</span>
+</code></pre></div><p>思考 :</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// while循环与do..while循环的区别是啥？</span>
+</code></pre></div><p>##断点调试   (超级重要)</p> <blockquote><p>断点调试是指自己在程序的某一行设置一个断点，调试时，程序运行到这一行就会停住，然后你可以一步一步往下调试，调试过程中可以看各个变量当前的值，出错的话，调试到出错的代码行即显示错误，停下。</p></blockquote> <p>调试步骤：</p> <div class="language-js extra-class"><pre class="language-js"><code>浏览器中按<span class="token constant">F12</span><span class="token operator">--</span><span class="token operator">&gt;</span>sources<span class="token operator">--</span><span class="token operator">&gt;</span>找到需要调试的文件<span class="token operator">--</span><span class="token operator">&gt;</span>在程序的某一行设置断点
+</code></pre></div><p>调试中的相关操作</p> <p><img src="/assets/js-img/tiaoshi.png" alt=""></p> <p>练习调试 :</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token number">1.</span> <span class="token number">3</span>以内的数相加
+<span class="token number">2.</span>   
+<span class="token keyword">var</span> age <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>age <span class="token operator">&gt;=</span><span class="token number">18</span> <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'大'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'小'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="第3个循环语句-for循环-重点"><a href="#第3个循环语句-for循环-重点" class="header-anchor">#</a> 第3个循环语句 : for循环  (重点)</h2> <blockquote><p>写while循环的经常会忘记自增，for循环其实是while循环演化过来的，语法更加的简洁明了，使用非常的广泛。</p></blockquote> <p><img src="/assets/js-img/for.png" alt=""></p> <p>for循环语法：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//1. for循环使用分号分隔</span>
+<span class="token comment">//2. for循环有2个分号，两个分号不能少</span>
+<span class="token keyword">for</span><span class="token punctuation">(</span>初始化语句<span class="token punctuation">;</span>判断语句<span class="token punctuation">;</span>自增语句<span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token comment">//循环体</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>执行顺序：1243  ----  243   -----243(直到循环条件变成false)</p> <ol><li>初始化语句</li> <li>判断语句</li> <li>自增或者自减</li> <li>循环体</li></ol> <p>for循环代码示例：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//1. 打印1-5之间所有数</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span> <span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span><span class="token number">5</span><span class="token punctuation">;</span>i<span class="token operator">++</span> <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">//2. 打印1-10之间所有数和</span>
+</code></pre></div><p>思考1：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">//1 求1-100之间所有数的和、平均值</span>
+<span class="token comment">//2 求1-100之间所有数的乘积</span>
+<span class="token comment">//3 计算1-100之间能3整除的数的和</span>
+</code></pre></div><p>思考2：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">//1 计算1-100之间不能被7整除的数的和</span>
+<span class="token comment">//2 求1-100之间所有偶数的和</span>
+<span class="token comment">//3 同时求1-100之间所有偶数和奇数的和</span>
+</code></pre></div><p>思考3（双重for循环）：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">//1  网页打印5*5方形★阵  document.write();</span>
+<span class="token comment">//2  网页打印直角三角形</span>
+<span class="token comment">//3  网页打印9*9乘法表</span>
+</code></pre></div><h2 id="break和continue"><a href="#break和continue" class="header-anchor">#</a> break和continue</h2> <blockquote><p>break:    结束/中止for循环</p> <p>​          立即跳出当前整个循环，即循环结束，开始执行循环后面的内容（直接跳传出大括号）</p> <p>​	 一般写在打印之后</p> <p>continue:   结束本次循环,进行下一个循环</p> <p>​           立即跳出当前循环，继续下一次循环（跳到i++的地方） (放打印代码前面)</p> <p>​	一般写在打印之前</p></blockquote> <p>需求 :</p> <div class="language-js extra-class"><pre class="language-js"><code> <span class="token comment">//1. 打印 1-5 , 当打印完第3个的时候,停止打印</span>
+ <span class="token comment">//2. 打印 1-5 , 当第3个的时候,不打印 ,,1 2 4 5</span>
+</code></pre></div><p>思考 :</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//1. 找到1-100之间第一个能被7整除的数</span>
+<span class="token comment">//2. 打印1-10之间所有的数，除了5这个数</span>
+
+思路<span class="token operator">:</span>
+<span class="token comment">//1.1 for (1-100)</span>
+<span class="token comment">//1.2 %7 ==0;</span>
+<span class="token comment">//1.3 中止</span>
+<span class="token comment">// 2.1 打印 1-10个数 </span>
+<span class="token comment">// 2.2 打印到5的时候,调出去</span>
+</code></pre></div><p>思考1 :</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//输出结果是什么？</span>
+<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span><span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span><span class="token punctuation">(</span>i <span class="token operator">==</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">continue</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">if</span><span class="token punctuation">(</span>i <span class="token operator">==</span> <span class="token number">7</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">break</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>思考2 :</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//1. 求1-100之间不能被7整除的整数的和（用continue）</span>
+<span class="token comment">//2. 求200-300之间所有的奇数的和（用continue）</span>
+<span class="token comment">//3. 求200-300之间第一个能被7整数的数（break）</span>
+总结 <span class="token operator">:</span> 
+<span class="token number">1.</span>continue 把所有满足条件的都先打印出来<span class="token punctuation">,</span><span class="token punctuation">,</span>找到不满足的提出去
+<span class="token number">2.</span>break <span class="token operator">:</span> 找到对应的拿到<span class="token punctuation">,</span>然后中止
+</code></pre></div><h2 id="总结"><a href="#总结" class="header-anchor">#</a> 总结 :</h2> <ol><li>循环有很多种，但是以后用得最多的是for循环</li> <li>当不明确循环次数的时候，可以使用while循环</li> <li>当无论如何都要执行一次代码的时候，可以使用do..while循环。</li> <li>循环可以相互替代。</li></ol> <h1 id="类型转换"><a href="#类型转换" class="header-anchor">#</a> 类型转换</h1> <h2 id="为什么要进行类型转换"><a href="#为什么要进行类型转换" class="header-anchor">#</a> 为什么要进行类型转换???</h2> <div class="language-js extra-class"><pre class="language-js"><code>服务器拿回来的数据<span class="token punctuation">,</span>有可能是字符串<span class="token punctuation">,</span>比如age<span class="token operator">=</span><span class="token string">'18'</span><span class="token punctuation">,</span> 
+ <span class="token keyword">var</span> age <span class="token operator">=</span> <span class="token string">'18'</span><span class="token punctuation">;</span>
+ console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>age<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="查看变量的类型"><a href="#查看变量的类型" class="header-anchor">#</a> 查看变量的类型</h2> <p>typeof关键字可以查看数据的类型</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">var</span> num <span class="token operator">=</span> <span class="token number">11</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">typeof</span> num<span class="token punctuation">)</span><span class="token punctuation">;</span>
+num <span class="token operator">=</span> <span class="token string">&quot;abc&quot;</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">typeof</span> num<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>**小技巧：在控制台可以根据颜色来判断数据的类型哦(<em>^__^</em>) **</p> <h2 id="转换成-数值-number"><a href="#转换成-数值-number" class="header-anchor">#</a> 转换成 数值 -number</h2> <ul><li><strong>1 Number()</strong></li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">Number</span><span class="token punctuation">(</span><span class="token string">'55'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">Number</span><span class="token punctuation">(</span><span class="token punctuation">)</span>可以把任意值转换成数值类型，但是如果字符串中有不是数字的字符，返回<span class="token number">NaN</span>
+</code></pre></div><ul><li><strong>2  parseInt()</strong> 和 <strong>parseFloat</strong>()</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token operator">-</span> <span class="token function">parseInt</span><span class="token punctuation">(</span><span class="token punctuation">)</span>  把整数或者小数都转化为整数<span class="token punctuation">;</span>
+<span class="token operator">-</span> <span class="token function">parseFloat</span><span class="token punctuation">(</span><span class="token punctuation">)</span> 把整数转化整数<span class="token punctuation">,</span>把小数转化为小数
+<span class="token keyword">var</span> num1 <span class="token operator">=</span> <span class="token function">parseInt</span><span class="token punctuation">(</span><span class="token string">&quot;12&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// 12</span>
+<span class="token keyword">var</span> num1 <span class="token operator">=</span> <span class="token function">parseInt</span><span class="token punctuation">(</span><span class="token string">&quot;12.3&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//12</span>
+<span class="token keyword">var</span> num1 <span class="token operator">=</span> <span class="token function">parseFloat</span><span class="token punctuation">(</span><span class="token string">&quot;12&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//12</span>
+<span class="token keyword">var</span> num1 <span class="token operator">=</span> <span class="token function">parseFloat</span><span class="token punctuation">(</span><span class="token string">&quot;12.3&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//12.3</span>
+
+<span class="token keyword">var</span> num1 <span class="token operator">=</span> <span class="token function">parseInt</span><span class="token punctuation">(</span><span class="token string">&quot;12.3abc&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// 返回12，如果第一个字符是数字会解析知道遇到非数字结束</span>
+<span class="token keyword">var</span> num2 <span class="token operator">=</span> <span class="token function">parseInt</span><span class="token punctuation">(</span><span class="token string">&quot;abc123&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment">// 返回NaN，如果第一个字符不是数字或者符号就返回NaN</span>
+
+
+</code></pre></div><ul><li><strong>3 算术运算    (最常用)</strong></li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">var</span> str <span class="token operator">=</span> <span class="token string">'500'</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token operator">+</span>str<span class="token punctuation">)</span><span class="token punctuation">;</span>		<span class="token comment">// 取正</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token operator">-</span>str<span class="token punctuation">)</span><span class="token punctuation">;</span>		<span class="token comment">// 取负</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>str <span class="token operator">-</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token operator">+</span><span class="token number">0</span>呢<span class="token operator">??</span><span class="token operator">?</span>拼接
+</code></pre></div><h2 id="转换成-字符串类型-string"><a href="#转换成-字符串类型-string" class="header-anchor">#</a> 转换成 字符串类型 - string</h2> <ul><li><strong>1.  String ( )</strong></li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">var</span> num <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+num <span class="token operator">=</span> <span class="token function">String</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li><strong>2.  toString ( )</strong></li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">var</span> num <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>num<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 把数值5变成字符串5</span>
+<span class="token comment">//将来所有的数据都会有toString()方法，除了null和undefined</span>
+</code></pre></div><ul><li><strong>3.   拼串，(最常用)</strong></li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">var</span> num <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+num <span class="token operator">=</span> num <span class="token operator">+</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="转换成布尔类型"><a href="#转换成布尔类型" class="header-anchor">#</a> 转换成布尔类型</h2> <blockquote><p>所有的值都可以转换成布尔类型</p></blockquote> <p>其中 <code>0</code>, <code>&quot;&quot;</code>, <code>undefined</code>，<code>null</code>，  <code>NaN</code>，这几个值会转换成false，其他值都会转换成true</p> <p><strong>这个代表的五大基本类型</strong></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 没有值 =&gt; false</span>
+<span class="token comment">// 有值 =&gt; true</span>
+<span class="token comment">// number string undefined null </span>
+<span class="token comment">//  0      ''    </span>
+
+注意 <span class="token operator">:</span> 
+   <span class="token number">1.</span> <span class="token string">'false'</span> 它是字符串 
+   <span class="token number">2.</span>  <span class="token parameter"><span class="token number">NaN</span></span>  <span class="token operator">=&gt;</span> <span class="token boolean">false</span> 
+</code></pre></div><ul><li>Boolean()</li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">Boolean</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">Boolean</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li>!!</li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token string">&quot;abc&quot;</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token operator">!</span><span class="token operator">!</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h1 id="nan"><a href="#nan" class="header-anchor">#</a> NaN</h1> <blockquote><p>NaN: not a number, 表示一个非数字</p></blockquote> <p>在js中，NaN用来表示一个非数字的特殊值，当发现无法进行运算时，js不会报错，而是会返回一个NaN</p> <p>NaN的注意事项：</p> <ul><li>NaN的类型是number类型的，表示一个非数字</li> <li>NaN不等于任何值，包括NaN本身</li> <li>通过isNaN()可以判断是否是一个数字，返回false的时候，表示是一个数字。</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> num <span class="token operator">=</span> <span class="token operator">+</span><span class="token string">'abc'</span>
+ console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">//NAN</span>
+
+<span class="token comment">// 判断是不是文字</span>
+<span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> b <span class="token operator">=</span> <span class="token string">'123'</span><span class="token punctuation">;</span>
+<span class="token comment">//  Nan 不是数字 </span>
+<span class="token comment">// true 不是文字</span>
+<span class="token comment">// false 不是不是文字 = 是文字</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">isNaN</span><span class="token punctuation">(</span>c<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最近一次更新时间:</span> <span class="time">2022年3月14日 21:23</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/javascript/js01/js01.html" class="prev">
+        开发工具
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.d65094bb.js" defer></script><script src="/assets/js/2.0899eaf2.js" defer></script><script src="/assets/js/29.efbef2cf.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>网络安全、HTTP协议 | 一穷的技术文档</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/assets/img/hero.png">
+    <meta name="description" content="一穷的技术文档">
+    
+    <link rel="preload" href="/assets/css/0.styles.495d9abf.css" as="style"><link rel="preload" href="/assets/js/app.d65094bb.js" as="script"><link rel="preload" href="/assets/js/2.0899eaf2.js" as="script"><link rel="preload" href="/assets/js/30.3a223816.js" as="script"><link rel="prefetch" href="/assets/js/10.84ee6588.js"><link rel="prefetch" href="/assets/js/11.7f56cb3f.js"><link rel="prefetch" href="/assets/js/12.3c8098c8.js"><link rel="prefetch" href="/assets/js/13.676de54f.js"><link rel="prefetch" href="/assets/js/14.4303d122.js"><link rel="prefetch" href="/assets/js/15.62d65c4f.js"><link rel="prefetch" href="/assets/js/16.81d9114e.js"><link rel="prefetch" href="/assets/js/17.5a7edb7b.js"><link rel="prefetch" href="/assets/js/18.42a31cea.js"><link rel="prefetch" href="/assets/js/19.a3ea8948.js"><link rel="prefetch" href="/assets/js/20.c4e574a7.js"><link rel="prefetch" href="/assets/js/21.61095d56.js"><link rel="prefetch" href="/assets/js/22.b2cb0e1d.js"><link rel="prefetch" href="/assets/js/23.cf624b42.js"><link rel="prefetch" href="/assets/js/24.10773fdd.js"><link rel="prefetch" href="/assets/js/25.bc9bcd8b.js"><link rel="prefetch" href="/assets/js/26.84a12ea2.js"><link rel="prefetch" href="/assets/js/27.20132d5f.js"><link rel="prefetch" href="/assets/js/28.4d0f29ae.js"><link rel="prefetch" href="/assets/js/29.efbef2cf.js"><link rel="prefetch" href="/assets/js/3.40887c2e.js"><link rel="prefetch" href="/assets/js/31.383df2a0.js"><link rel="prefetch" href="/assets/js/32.53d4bc53.js"><link rel="prefetch" href="/assets/js/33.b87d2fd0.js"><link rel="prefetch" href="/assets/js/34.4b7f2c68.js"><link rel="prefetch" href="/assets/js/35.27769cfd.js"><link rel="prefetch" href="/assets/js/36.66896910.js"><link rel="prefetch" href="/assets/js/37.2330bc70.js"><link rel="prefetch" href="/assets/js/4.9686c1c3.js"><link rel="prefetch" href="/assets/js/5.ec4b3f90.js"><link rel="prefetch" href="/assets/js/6.27888615.js"><link rel="prefetch" href="/assets/js/7.bb36fb71.js"><link rel="prefetch" href="/assets/js/8.4563cd2b.js"><link rel="prefetch" href="/assets/js/9.c734c7d0.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.495d9abf.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/assets/img/hero.png" alt="一穷的技术文档" class="logo"> <span class="site-name can-hide">一穷的技术文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="目录" class="dropdown-title"><span class="title">目录</span> <span class="arrow down"></span></button> <button type="button" aria-label="目录" class="mobile-dropdown-title"><span class="title">目录</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/html/html-1.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/css/css-3.html" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/javascript/js01/js01.html" class="nav-link">
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/net/.html" class="nav-link">
+  node.js
+</a></li><li class="dropdown-item"><!----> <a href="/php/php.html" class="nav-link">
+  php
+</a></li><li class="dropdown-item"><!----> <a href="/vuex/vue01.html" class="nav-link">
+  Vuex
+</a></li><li class="dropdown-item"><!----> <a href="/Webpack/Webpack01.html" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/net/net01.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  计算机网络
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试资料" class="dropdown-title"><span class="title">面试资料</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试资料" class="mobile-dropdown-title"><span class="title">面试资料</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/interview/html.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/interview/css.html" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/interview/js.html" class="nav-link">
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/interview/ES6.html" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/interview/vue.html" class="nav-link">
+  Vue
+</a></li></ul></div></div><div class="nav-item"><a href="/note/note1.html" class="nav-link">
+  学习笔记
+</a></div><div class="nav-item"><a href="/selfme.html" class="nav-link">
+  关于我
+</a></div><div class="nav-item"><a href="https://github.com/xxfuturexx" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="目录" class="dropdown-title"><span class="title">目录</span> <span class="arrow down"></span></button> <button type="button" aria-label="目录" class="mobile-dropdown-title"><span class="title">目录</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/html/html-1.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/css/css-3.html" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/javascript/js01/js01.html" class="nav-link">
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/net/.html" class="nav-link">
+  node.js
+</a></li><li class="dropdown-item"><!----> <a href="/php/php.html" class="nav-link">
+  php
+</a></li><li class="dropdown-item"><!----> <a href="/vuex/vue01.html" class="nav-link">
+  Vuex
+</a></li><li class="dropdown-item"><!----> <a href="/Webpack/Webpack01.html" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/net/net01.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  计算机网络
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试资料" class="dropdown-title"><span class="title">面试资料</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试资料" class="mobile-dropdown-title"><span class="title">面试资料</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/interview/html.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/interview/css.html" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/interview/js.html" class="nav-link">
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/interview/ES6.html" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/interview/vue.html" class="nav-link">
+  Vue
+</a></li></ul></div></div><div class="nav-item"><a href="/note/note1.html" class="nav-link">
+  学习笔记
+</a></div><div class="nav-item"><a href="/selfme.html" class="nav-link">
+  关于我
+</a></div><div class="nav-item"><a href="https://github.com/xxfuturexx" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>网络安全、HTTP协议</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/net/net01.html#网络安全、http协议" class="sidebar-link">网络安全、HTTP协议</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/net/net01.html#tcp-udp-区别-★★★★" class="sidebar-link">TCP UDP 区别（★★★★）</a></li><li class="sidebar-sub-header"><a href="/net/net01.html#http和https区别-高频" class="sidebar-link">Http和Https区别（高频）</a></li><li class="sidebar-sub-header"><a href="/net/net01.html#get和post区别-高频-★★★★★-0" class="sidebar-link">GET和POST区别（高频）（★★★★★）0</a></li><li class="sidebar-sub-header"><a href="/net/net01.html#理解xss-csrf-ddos攻击原理以及避免方式-0" class="sidebar-link">理解xss，csrf，ddos攻击原理以及避免方式 0</a></li><li class="sidebar-sub-header"><a href="/net/net01.html#http特性以及状态码-★★★★-0" class="sidebar-link">http特性以及状态码（★★★★）0</a></li><li class="sidebar-sub-header"><a href="/net/net01.html#三次握手-四次挥手-★★★★★" class="sidebar-link">三次握手，四次挥手（★★★★★）</a></li><li class="sidebar-sub-header"><a href="/net/net01.html#http三次握手" class="sidebar-link">http三次握手</a></li><li class="sidebar-sub-header"><a href="/net/net01.html#http四次挥手" class="sidebar-link">http四次挥手</a></li><li class="sidebar-sub-header"><a href="/net/net01.html#http1-0、http1-1、http2-0的区别-★★★★-0" class="sidebar-link">http1.0、http1.1、http2.0的区别（★★★★）0</a></li><li class="sidebar-sub-header"><a href="/net/net01.html#输入url后http请求的完整过程" class="sidebar-link">输入url后http请求的完整过程</a></li><li class="sidebar-sub-header"><a href="/net/net01.html#网络模型-各自有哪些协议-端口号是多少-★★★★★" class="sidebar-link">网络模型，各自有哪些协议，端口号是多少（★★★★★）</a></li><li class="sidebar-sub-header"><a href="/net/net01.html#_2-输入url到展示页面的全过程-★★★★★" class="sidebar-link">2) 输入URL到展示页面的全过程（★★★★★）</a></li><li class="sidebar-sub-header"><a href="/net/net01.html#http如何实现缓存-了解" class="sidebar-link">http如何实现缓存（了解）</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="网络安全、http协议"><a href="#网络安全、http协议" class="header-anchor">#</a> 网络安全、HTTP协议</h2> <h3 id="tcp-udp-区别-★★★★"><a href="#tcp-udp-区别-★★★★" class="header-anchor">#</a> TCP UDP 区别（★★★★）</h3> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">UDP</span><span class="token template-punctuation string">`</span></span>向上层提供无连接不可靠服务。，<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">TCP</span><span class="token template-punctuation string">`</span></span>向上层提供面向连接的可靠服务 
+</code></pre></div><table><thead><tr><th>区别</th> <th>UDP</th> <th>TCP</th></tr></thead> <tbody><tr><td>是否连接</td> <td>无连接</td> <td>面向连接</td></tr> <tr><td>是否可靠</td> <td>不可靠传输，不使用流量控制和拥塞控制</td> <td>可靠传输，使用流量控制和拥塞控制</td></tr> <tr><td>连接对象个数</td> <td>支持一对一，一对多，多对一和多对多交互通信</td> <td>只能是一对一通信</td></tr> <tr><td>传输方式</td> <td>面向报文</td> <td>面向字节流</td></tr> <tr><td>首部开销</td> <td>首部开销小，仅8字节</td> <td>首部最小20字节，最大60字节</td></tr> <tr><td>适用场景</td> <td>适用于实时应用（IP电话、视频会议、直播、qq发信息等）</td> <td>适用于要求可靠传输的应用，例如文件传输</td></tr></tbody></table> <h3 id="http和https区别-高频"><a href="#http和https区别-高频" class="header-anchor">#</a> Http和Https区别（高频）</h3> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token number">1.</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">HTTP</span><span class="token template-punctuation string">`</span></span> 的<span class="token constant">URL</span> 以http<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span> 开头，而<span class="token constant">HTTPS</span> 的<span class="token constant">URL</span> 以https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span> 开头
+<span class="token number">2.</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">HTTP</span><span class="token template-punctuation string">`</span></span> 是不安全的，而 <span class="token constant">HTTPS</span> 是安全的
+<span class="token number">3.</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">HTTP</span><span class="token template-punctuation string">`</span></span> 标准端口是<span class="token number">80</span> ，而 <span class="token constant">HTTPS</span> 的标准端口是<span class="token number">443</span>
+<span class="token number">4.</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">在OSI</span><span class="token template-punctuation string">`</span></span> 网络模型中，<span class="token constant">HTTP</span>工作于应用层，而<span class="token constant">HTTPS</span> 的<span class="token constant">SSL</span>在传输层和应用层之间加密（解密）
+<span class="token number">5.</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">HTTP</span><span class="token template-punctuation string">`</span></span> 无法加密，而<span class="token constant">HTTPS</span> 对传输的数据进行加密
+<span class="token number">6.</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">HTTP</span><span class="token template-punctuation string">`</span></span>无需证书，而<span class="token constant">HTTPS</span> 需要<span class="token constant">CA</span>机构颁发的<span class="token constant">SSL</span>证书
+</code></pre></div><h3 id="get和post区别-高频-★★★★★-0"><a href="#get和post区别-高频-★★★★★-0" class="header-anchor">#</a> GET和POST区别（高频）（★★★★★）0</h3> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token number">1.</span><span class="token constant">GET</span>在浏览器回退不会再次请求，<span class="token constant">POST</span>会再次提交请求
+<span class="token number">2.</span><span class="token constant">GET</span>请求会被浏览器主动缓存，<span class="token constant">POST</span>不会，要手动设置
+<span class="token number">3.</span><span class="token constant">GET</span>请求参数会被完整保留在浏览器历史记录里，<span class="token constant">POST</span>中的参数不会
+<span class="token number">4.</span><span class="token constant">GET</span>请求在<span class="token constant">URL</span>中传送的参数是有长度限制的，而<span class="token constant">POST</span>没有限制
+<span class="token number">5.</span><span class="token constant">GET</span>参数通过<span class="token constant">URL</span>传递，<span class="token constant">POST</span>放在Request body中
+<span class="token number">6.</span><span class="token constant">GET</span>参数暴露在地址栏不安全，<span class="token constant">POST</span>放在报文内部更安全
+<span class="token number">7.</span><span class="token constant">GET</span>一般用于查询信息，<span class="token constant">POST</span>一般用于提交某种信息进行某些修改操作
+<span class="token number">8.</span><span class="token constant">GET</span>产生一个<span class="token constant">TCP</span>数据包；<span class="token constant">POST</span>产生两个<span class="token constant">TCP</span>数据包
+</code></pre></div><h3 id="理解xss-csrf-ddos攻击原理以及避免方式-0"><a href="#理解xss-csrf-ddos攻击原理以及避免方式-0" class="header-anchor">#</a> 理解xss，csrf，ddos攻击原理以及避免方式 0</h3> <p><code>XSS</code>(<code>Cross-Site Scripting</code>，<strong>跨站脚本攻击</strong>)是一种代码注入攻击。攻击者在目标网站上注入恶意代码，当被攻击者登陆网站时就会执行这些恶意代码，这些脚本可以读取 <code>cookie，session tokens</code>，或者其它敏感的网站信息，对用户进行钓鱼欺诈，甚至发起蠕虫攻击等。</p> <p><code>CSRF</code>（<code>Cross-site request forgery</code>）<strong>跨站请求伪造</strong>：攻击者诱导受害者进入第三方网站，在第三方网站中，向被攻击网站发送跨站请求。利用受害者在被攻击网站已经获取的注册凭证，绕过后台的用户验证，达到冒充用户对被攻击的网站执行某项操作的目的。</p> <p><strong>XSS（跨站脚本攻击）避免方式：</strong></p> <ol><li><p><code>url</code>参数使用<code>encodeURIComponent</code>方法转义</p></li> <li><p>尽量不使用<code>InnerHtml</code>插入<code>HTML</code>内容</p></li> <li><p>使用特殊符号、标签转义符。</p></li></ol> <p><strong><code>CSRF</code>（跨站请求伪造）避免方式：</strong></p> <ol><li>添加验证码</li> <li>使用token
+<ul><li>服务端给用户生成一个token，加密后传递给用户</li> <li>用户在提交请求时，需要携带这个token</li> <li>服务端验证token是否正确</li></ul></li></ol> <p><code>DDoS</code>又叫分布式拒绝服务，全称 <code>Distributed Denial of Service</code>，其原理就是利用大量的请求造成服务器资源过载，导致服务不可用。</p> <p><strong><code>DDos</code>避免方式：</strong></p> <ol><li>限制单IP请求频率。</li> <li>防火墙等防护设置禁止<code>ICMP</code>包等</li> <li>检查特权端口的开放</li></ol> <h3 id="http特性以及状态码-★★★★-0"><a href="#http特性以及状态码-★★★★-0" class="header-anchor">#</a> http特性以及状态码（★★★★）0</h3> <div class="language-javascript extra-class"><pre class="language-javascript"><code>比如：
+    <span class="token number">200</span>响应成功
+    <span class="token number">301</span>永久重定向
+    <span class="token number">302</span>临时重定向
+    <span class="token number">304</span>资源缓存
+    <span class="token number">403</span>服务器禁止访问
+    <span class="token number">404</span>服务器资源未找到
+    <span class="token number">500</span> <span class="token number">502</span>服务器内部错误
+    <span class="token number">504</span> 服务器繁忙
+    <span class="token number">1</span>xx	Informational（信息状态码）	  接受请求正在处理
+    <span class="token number">2</span>xx	Success（成功状态码）            请求正常处理完毕
+    <span class="token number">3</span>xx	Redirection（重定向状态码）		 需要附加操作已完成请求
+    <span class="token number">4</span>xx	Client Error（客户端错误状态码）	服务器无法处理请求
+    <span class="token number">5</span>xx	Server Error（服务器错误状态码）	服务器处理请求出错
+</code></pre></div><h3 id="三次握手-四次挥手-★★★★★"><a href="#三次握手-四次挥手-★★★★★" class="header-anchor">#</a> 三次握手，四次挥手（★★★★★）</h3> <h3 id="http三次握手"><a href="#http三次握手" class="header-anchor">#</a> http三次握手</h3> <ul><li>第一步：客户端发送SYN（同步）报文到服务端发起握手，发送完之后客户端处于SYN_Send状态</li> <li>第二步：服务端收到SYN报文之后回复SYN和ACK（确认）报文给客户端</li> <li>第三步：客户端收到SYN和ACK，向服务端发送一个ACK报文,客户端转为established（已获确认的）状态，此时服务端收到ACK报文后也处于established状态，此时双方已建立了连接</li></ul> <p><img src="/assets/net-img/tcp%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B.png" alt="image-20"></p> <h3 id="http四次挥手"><a href="#http四次挥手" class="header-anchor">#</a> http四次挥手</h3> <p>刚开始双方都处于<code>establised</code> 状态，假如是客户端先发起关闭请求，则：</p> <ol><li>第一次挥手：客户端发送<strong>一个 FIN 报文</strong>，报文中会指定一个序列号。此时客户端处于FIN_WAIT1状态。</li> <li>第二次挥手：服务端收到 FIN 之后，会发送 ACK 报文，且把客户端的序列号值 + 1 作为 ACK 报文的序列号值，表明已经收到客户端的报文了，此时服务端处于 CLOSE_WAIT状态。</li> <li>第三次挥手：过了一段时间后，如果服务端也想断开连接了，和客户端的第一次挥手一样，发给 FIN 报文，且指定一个序列号。此时服务端处于 LAST_ACK 的状态。</li> <li>第四次挥手：客户端收到 FIN 之后，一样发送一个 ACK 报文作为应答，且把服务端的序列号值 + 1 作为自己 ACK 报文的序列号值，此时客户端处于 TIME_WAIT 状态。需要过一阵子以确保服务端收到自己的 ACK 报文之后才会进入 CLOSED 状态</li> <li>服务端收到 ACK 报文之后，就处于关闭连接了，处于 CLOSED 状态。</li></ol> <p><img src="/assets/net-img/tcp四次挥手.png">（不用管FIN+ACK的ACK）</p> <h3 id="http1-0、http1-1、http2-0的区别-★★★★-0"><a href="#http1-0、http1-1、http2-0的区别-★★★★-0" class="header-anchor">#</a> http1.0、http1.1、http2.0的区别（★★★★）0</h3> <ol><li>1.1和1.0相比，1.1可以一次传输多个文件</li> <li>http1.x解析基于文本，http2.0采用二进制格式，新增特性 多路复用、header压缩、服务端推送(静态html资源)</li></ol> <h3 id="输入url后http请求的完整过程"><a href="#输入url后http请求的完整过程" class="header-anchor">#</a> 输入url后http请求的完整过程</h3> <blockquote><p>建立TCP连接-&gt;发送请求行-&gt;发送请求头-&gt;（到达服务器）发送状态行-&gt;发送响应头-&gt;发送响应数据-&gt;断TCP连接</p></blockquote> <h3 id="网络模型-各自有哪些协议-端口号是多少-★★★★★"><a href="#网络模型-各自有哪些协议-端口号是多少-★★★★★" class="header-anchor">#</a> 网络模型，各自有哪些协议，端口号是多少（★★★★★）</h3> <p><strong>osi7层模型，tcp5层模型</strong></p> <p>osi7层模型：<code>物理层-数据链路层-网络层-传输层-会话层-表示层-应用层</code></p> <p>tcp5层模型：<code>物理层-数据链路层-网络层-传输层-应用层</code></p> <h3 id="_2-输入url到展示页面的全过程-★★★★★"><a href="#_2-输入url到展示页面的全过程-★★★★★" class="header-anchor">#</a> 2) 输入URL到展示页面的全过程（★★★★★）</h3> <p>域名DNS解析,解析到真正的IP地址</p> <p>|</p> <p>客户端与服务端建立TCP连接，3次握手</p> <p>​           |</p> <p>客户端发送Http请求</p> <p>​           |</p> <p>服务端接收到http请求，处理，并返回</p> <p>​           |</p> <p>客户端接收到返回数据，处理数据（渲染页面，执行js）</p> <div class="language- extra-class"><pre class="language-text"><code>三个方面：
+网络篇:
+	     构建请求
+            
+             DNS服务器会进行域名解析,解析到真正的IP地址
+             			|
+             客户端与服务端建立TCP连接(三次握手)
+             			|
+			 客户端发送HTTP请求(网络请求后网络响应)
+			 			|
+			 服务端接收到http请求，处理，并返回数据
+			 			|
+			 客户端接收到返回数据，处理数据（渲染页面，执行js）
+浏览器解析篇:
+	   		解析html构建DOM树
+            解析css构建CSS树、样式计算
+            解析JS，使用js脚本引擎解析执行,动态地改变DOM树
+            生成布局树(Layout Tree)
+浏览器渲染篇:
+            建立图层树(Layer Tree)
+            生成绘制列表
+            生成图块并栅格化
+            显示器显示内容
+            (浏览器会将各层的信息发送给GPU,GPU会将各层合成,显示在屏幕上)
+            最后TCP 四次挥手断开连接
+            
+</code></pre></div><h3 id="http如何实现缓存-了解"><a href="#http如何实现缓存-了解" class="header-anchor">#</a> http如何实现缓存（了解）</h3> <ol><li><strong>强缓存</strong>==&gt;Expires(过期时间)/Cache-Control(no-cache)(优先级高) 协商缓存 ==&gt;Last-Modified/Etag(优先级高)Etag适用于经常改变的小文件  Last-Modefied适用于不怎么经常改变的大文件</li> <li><strong>强缓存策略和协商缓存策略</strong>在缓存命中时都会直接使用本地的缓存副本，区别只在于协商缓存会向服务器发送一次请求。它们缓存不命中时，都会向服务器发送请求来获取资源。在实际的缓存机制中，强缓存策略和协商缓存策略是一起合作使用的。浏览器首先会根据请求的信息判断，强缓存是否命中，如果命中则直接使用资源。如果不命中则根据头信息向服务器发起请求，使用协商缓存，如果协商缓存命中的话，则服务器不返回资源，浏览器直接使用本地资源的副本，如果协商缓存不命中，则浏览器返回最新的资源给浏览器。</li></ol></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.d65094bb.js" defer></script><script src="/assets/js/2.0899eaf2.js" defer></script><script src="/assets/js/30.3a223816.js" defer></script>
+  </body>
+</html>

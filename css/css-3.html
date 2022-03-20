@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>css的概念及其作用 | 一穷的技术文档</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/assets/img/hero.png">
+    <meta name="description" content="一穷的技术文档">
+    
+    <link rel="preload" href="/assets/css/0.styles.495d9abf.css" as="style"><link rel="preload" href="/assets/js/app.d65094bb.js" as="script"><link rel="preload" href="/assets/js/2.0899eaf2.js" as="script"><link rel="preload" href="/assets/js/16.81d9114e.js" as="script"><link rel="prefetch" href="/assets/js/10.84ee6588.js"><link rel="prefetch" href="/assets/js/11.7f56cb3f.js"><link rel="prefetch" href="/assets/js/12.3c8098c8.js"><link rel="prefetch" href="/assets/js/13.676de54f.js"><link rel="prefetch" href="/assets/js/14.4303d122.js"><link rel="prefetch" href="/assets/js/15.62d65c4f.js"><link rel="prefetch" href="/assets/js/17.5a7edb7b.js"><link rel="prefetch" href="/assets/js/18.42a31cea.js"><link rel="prefetch" href="/assets/js/19.a3ea8948.js"><link rel="prefetch" href="/assets/js/20.c4e574a7.js"><link rel="prefetch" href="/assets/js/21.61095d56.js"><link rel="prefetch" href="/assets/js/22.b2cb0e1d.js"><link rel="prefetch" href="/assets/js/23.cf624b42.js"><link rel="prefetch" href="/assets/js/24.10773fdd.js"><link rel="prefetch" href="/assets/js/25.bc9bcd8b.js"><link rel="prefetch" href="/assets/js/26.84a12ea2.js"><link rel="prefetch" href="/assets/js/27.20132d5f.js"><link rel="prefetch" href="/assets/js/28.4d0f29ae.js"><link rel="prefetch" href="/assets/js/29.efbef2cf.js"><link rel="prefetch" href="/assets/js/3.40887c2e.js"><link rel="prefetch" href="/assets/js/30.3a223816.js"><link rel="prefetch" href="/assets/js/31.383df2a0.js"><link rel="prefetch" href="/assets/js/32.53d4bc53.js"><link rel="prefetch" href="/assets/js/33.b87d2fd0.js"><link rel="prefetch" href="/assets/js/34.4b7f2c68.js"><link rel="prefetch" href="/assets/js/35.27769cfd.js"><link rel="prefetch" href="/assets/js/36.66896910.js"><link rel="prefetch" href="/assets/js/37.2330bc70.js"><link rel="prefetch" href="/assets/js/4.9686c1c3.js"><link rel="prefetch" href="/assets/js/5.ec4b3f90.js"><link rel="prefetch" href="/assets/js/6.27888615.js"><link rel="prefetch" href="/assets/js/7.bb36fb71.js"><link rel="prefetch" href="/assets/js/8.4563cd2b.js"><link rel="prefetch" href="/assets/js/9.c734c7d0.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.495d9abf.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/assets/img/hero.png" alt="一穷的技术文档" class="logo"> <span class="site-name can-hide">一穷的技术文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="目录" class="dropdown-title"><span class="title">目录</span> <span class="arrow down"></span></button> <button type="button" aria-label="目录" class="mobile-dropdown-title"><span class="title">目录</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/html/html-1.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/css/css-3.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/javascript/js01/js01.html" class="nav-link">
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/css/.html" class="nav-link">
+  node.js
+</a></li><li class="dropdown-item"><!----> <a href="/php/php.html" class="nav-link">
+  php
+</a></li><li class="dropdown-item"><!----> <a href="/vuex/vue01.html" class="nav-link">
+  Vuex
+</a></li><li class="dropdown-item"><!----> <a href="/Webpack/Webpack01.html" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/net/net01.html" class="nav-link">
+  计算机网络
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试资料" class="dropdown-title"><span class="title">面试资料</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试资料" class="mobile-dropdown-title"><span class="title">面试资料</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/interview/html.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/interview/css.html" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/interview/js.html" class="nav-link">
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/interview/ES6.html" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/interview/vue.html" class="nav-link">
+  Vue
+</a></li></ul></div></div><div class="nav-item"><a href="/note/note1.html" class="nav-link">
+  学习笔记
+</a></div><div class="nav-item"><a href="/selfme.html" class="nav-link">
+  关于我
+</a></div><div class="nav-item"><a href="https://github.com/xxfuturexx" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="目录" class="dropdown-title"><span class="title">目录</span> <span class="arrow down"></span></button> <button type="button" aria-label="目录" class="mobile-dropdown-title"><span class="title">目录</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/html/html-1.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/css/css-3.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/javascript/js01/js01.html" class="nav-link">
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/css/.html" class="nav-link">
+  node.js
+</a></li><li class="dropdown-item"><!----> <a href="/php/php.html" class="nav-link">
+  php
+</a></li><li class="dropdown-item"><!----> <a href="/vuex/vue01.html" class="nav-link">
+  Vuex
+</a></li><li class="dropdown-item"><!----> <a href="/Webpack/Webpack01.html" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/net/net01.html" class="nav-link">
+  计算机网络
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试资料" class="dropdown-title"><span class="title">面试资料</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试资料" class="mobile-dropdown-title"><span class="title">面试资料</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/interview/html.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/interview/css.html" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/interview/js.html" class="nav-link">
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/interview/ES6.html" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/interview/vue.html" class="nav-link">
+  Vue
+</a></li></ul></div></div><div class="nav-item"><a href="/note/note1.html" class="nav-link">
+  学习笔记
+</a></div><div class="nav-item"><a href="/selfme.html" class="nav-link">
+  关于我
+</a></div><div class="nav-item"><a href="https://github.com/xxfuturexx" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/css/css-3.html" aria-current="page" class="active sidebar-link">css的概念及其作用</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/css/css-3.html#css的概念及其作用" class="sidebar-link">css的概念及其作用</a></li><li class="sidebar-sub-header"><a href="/css/css-3.html#字体属性" class="sidebar-link">字体属性</a></li><li class="sidebar-sub-header"><a href="/css/css-3.html#开发者工具-重点" class="sidebar-link">开发者工具 (重点)</a></li><li class="sidebar-sub-header"><a href="/css/css-3.html#选择器" class="sidebar-link">选择器</a></li><li class="sidebar-sub-header"><a href="/css/css-3.html#文字的对齐-缩进-下划线" class="sidebar-link">文字的对齐 缩进 下划线</a></li><li class="sidebar-sub-header"><a href="/css/css-3.html#行高" class="sidebar-link">行高</a></li><li class="sidebar-sub-header"><a href="/css/css-3.html#其他细节属性" class="sidebar-link">其他细节属性</a></li></ul></li><li><a href="/css/css-4.html" class="sidebar-link">css的三大特性</a></li><li><a href="/css/css-5.html" class="sidebar-link">css权重叠加盒子模型</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="css的概念及其作用"><a href="#css的概念及其作用" class="header-anchor">#</a> css的概念及其作用</h2> <blockquote><p>css全称为（Cascading Style Sheets）翻译过来就是层叠样式表
+作用：主要作用就是设置网页的文字（大小，颜色，字体，对齐等等）图片和板式布局等等 说的简单点了就是给页面化妆的</p></blockquote> <p>基本语法：</p> <div class="language- extra-class"><pre class="language-text"><code>选择器 {
+	属性1: 值1;
+	属性2: 值2;
+	属性3: 值3;
+}
+</code></pre></div><p>注意：符号必须是英文状态下的</p> <h2 id="字体属性"><a href="#字体属性" class="header-anchor">#</a> 字体属性</h2> <h3 id="设置字体的大小"><a href="#设置字体的大小" class="header-anchor">#</a> 设置字体的大小</h3> <div class="language-html extra-class"><pre class="language-html"><code>font-size  设置字体的大小   
+​取值：font-size: 12px;  
+注意：在css大多数数值都需要添加单位
+</code></pre></div><h3 id="设置字体的粗细"><a href="#设置字体的粗细" class="header-anchor">#</a> 设置字体的粗细</h3> <div class="language-html extra-class"><pre class="language-html"><code>font-weight 设置字体的粗细 
+取值：normal 、bold、 100 - 900
+</code></pre></div><p>多说一嘴：用数字设置的时候，只有400和700会产生变化，是因为字体在初始设计的时候就没有设置太多的粗细标准，一般就是两种，默认的和加粗的
+所以 在实际工作中 用的最多的就是normal（400） bold（700）</p> <h3 id="设置字体的风格"><a href="#设置字体的风格" class="header-anchor">#</a> 设置字体的风格</h3> <div class="language-html extra-class"><pre class="language-html"><code>font-style 设置字体的风格(样式)
+取值：
+​	normal 默认 显示标准的字体样式
+​	italic 字体倾斜
+</code></pre></div><h3 id="设置不同类型的字体"><a href="#设置不同类型的字体" class="header-anchor">#</a> 设置不同类型的字体</h3> <div class="language-html extra-class"><pre class="language-html"><code>font-family 设置不同的字体
+取值：宋体、微软雅黑、黑体、。。。等等
+</code></pre></div><p>多说一嘴：</p> <ol><li>不推荐使用一些冷门字体，因为一些冷门字体很多电脑里面默认没有安装，这个时候就会显示不出来。所以实际工作中，默认都是一些主流字体 如宋体 微软雅黑 等。。。</li> <li>字体可以写多组，中间用逗号隔开</li> <li>字体名称中如果有空格 # $ 这种特殊字符的时候需要添加上引号 中文字体也需要添加引号
+了解：http://code.ciaoca.com/style/cssfont2unicode/</li></ol> <h3 id="font简写"><a href="#font简写" class="header-anchor">#</a> font简写</h3> <div class="language-html extra-class"><pre class="language-html"><code>font: font-style  font-weight  font-size/line-height  font-family;
+
+不建议修改顺序  并且不需要设置的属性可以不写  但是font-size和font-family必须指定，否则将不起作用
+</code></pre></div><h2 id="开发者工具-重点"><a href="#开发者工具-重点" class="header-anchor">#</a> 开发者工具 (重点)</h2> <p>开发者工具对于开发者来说特别重要，只要你开发你就离不开它。一定要学会使用
+作用：调试代码 检测代码的！！</p> <p>打开开发者工具：f12 或者在页面上直接右键选择 “检查”</p> <p>在基础班我们只需要关注elements这个面板  右侧的style就是当前标签对应的css样式  我们可以通过这个来检查代码错误和调试代码！！</p> <h2 id="选择器"><a href="#选择器" class="header-anchor">#</a> 选择器</h2> <blockquote><p>想要操作任何一个标签，那么首先需要做的事情就是选中对应的标签，而这个就是选择器的作用</p></blockquote> <h3 id="基础选择器"><a href="#基础选择器" class="header-anchor">#</a> 基础选择器</h3> <h4 id="标签选择器"><a href="#标签选择器" class="header-anchor">#</a> 标签选择器</h4> <div class="language- extra-class"><pre class="language-text"><code>	标签名 {属性1: 值1;属性2: 值2;}
+</code></pre></div><p>特点：会将页面上所有符合的标签都选择上，但是不能实现差异化选择</p> <h4 id="类选择器"><a href="#类选择器" class="header-anchor">#</a> 类选择器</h4> <blockquote><p>声明自定义类名  .自定义类名 {属性1:值1;属性2: 值2;} （声明类名选择器）</p></blockquote> <blockquote><p>给对应的元素添加class类名属性 class=&quot;自定义的类名&quot;  （调用类名选择器）</p></blockquote> <div class="language-html extra-class"><pre class="language-html"><code>如：.box {
+		font-size:12px;
+	}
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>box<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>内容<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>特点：可以给相同标签的元素定义不同的样式 在实际工作中用的<strong>最多</strong></p> <h4 id="多类名选择器"><a href="#多类名选择器" class="header-anchor">#</a> 多类名选择器</h4> <p>思考：需求：两个相同的标签，有一些共同的css样式 但是也有一些差异化的css样式</p> <div class="language-html extra-class"><pre class="language-html"><code>.red {
+	color: red;
+}
+.ft12 {
+	font-size: 12px;
+}
+.ft14 {
+	font-size: 14px;
+}
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>red ft12<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>内容<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>red ft14<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>内容<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+</code></pre></div><p>一个元素可以拥有多个类名 类名和类名之间用空格隔开
+多类名选择器可以让我们解决更复杂的一些需求</p> <h4 id="id选择器"><a href="#id选择器" class="header-anchor">#</a> id选择器</h4> <p>id选择器的使用方式和类选择器基本一致</p> <blockquote><ol><li>声明id   #自定义id名字 {属性1:值1;属性2:值2;}</li> <li>调用id   给对应的元素添加属性 id=&quot;自定义id&quot;</li></ol></blockquote> <div class="language- extra-class"><pre class="language-text"><code>#box {
+	font-size:12px;
+}
+
+&lt;div id=&quot;box&quot;&gt;内容&lt;/div&gt;
+</code></pre></div><p>特点：id选择器一般配合后期的JS使用较多，效果和类选择器一样，只不过是类选择器可以被多个元素调用，但是id选择器只能被一个元素调用 在同一个页面中吗，不能出现两个id值相同的元素</p> <h4 id="通配符选择器"><a href="#通配符选择器" class="header-anchor">#</a> 通配符选择器</h4> <div class="language- extra-class"><pre class="language-text"><code>* {
+	属性1: 值1;
+	属性2：值2;
+}
+</code></pre></div><p>特点：选中任何元素，后期用于页面初始化。</p> <h4 id="伪类选择器"><a href="#伪类选择器" class="header-anchor">#</a> 伪类选择器</h4> <p>伪类选择器可以理解为选择的元素的一种状态，并不是如之前直接选中元素就完事了</p> <div class="language- extra-class"><pre class="language-text"><code>a:link   没有被访问的时候的状态
+a:visited  访问之后的状态	
+a:hover		鼠标移动上去之后的状态
+a:active	鼠标按下的状态
+</code></pre></div><p>伪类选择器在实际工作中，不会写这么多，意义不大，推荐简写的方式完成</p> <div class="language- extra-class"><pre class="language-text"><code>a {}
+a:hover {}
+</code></pre></div><h2 id="文字的对齐-缩进-下划线"><a href="#文字的对齐-缩进-下划线" class="header-anchor">#</a> 文字的对齐 缩进 下划线</h2> <p>水平对齐</p> <div class="language- extra-class"><pre class="language-text"><code>text-align:值;  
+取值：left right center
+该属性控制的是标签  “内部的文字”  水平居中
+</code></pre></div><p>首行缩进</p> <div class="language- extra-class"><pre class="language-text"><code>text-indent:值;
+取值可以是像素，也可以是em  推荐写法：text-indent:2em;
+</code></pre></div><p>字体下划线和删除线</p> <div class="language- extra-class"><pre class="language-text"><code>text-decoration:值;
+取值：underline 下划线  line-through 删除线 none 去掉多余的样式
+</code></pre></div><h2 id="行高"><a href="#行高" class="header-anchor">#</a> 行高</h2> <p>行高控制的是文字与文字之间的上下距离 （行距）</p> <div class="language- extra-class"><pre class="language-text"><code>line-height:值;
+</code></pre></div><ol><li>值的取值是像素</li> <li>**小技巧：如果将标签的高度和行高设置成一样，那么这个标签里面的文字可以在这个标签里面垂直居中</li> <li>两者结合使用可以让单行文字在标签内部水平垂直居中</li></ol> <h2 id="其他细节属性"><a href="#其他细节属性" class="header-anchor">#</a> 其他细节属性</h2> <ol><li>颜色属性
+颜色属性的取值可以是 十六进制，rgb(), rgba()</li> <li>css的注释
+/* 注释内容 */</li></ol></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最近一次更新时间:</span> <span class="time">2021年12月6日 00:14</span></div></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/css/css-4.html">
+        css的三大特性
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.d65094bb.js" defer></script><script src="/assets/js/2.0899eaf2.js" defer></script><script src="/assets/js/16.81d9114e.js" defer></script>
+  </body>
+</html>

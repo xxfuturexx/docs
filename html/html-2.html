@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>HTML5新增的标签及其表单属性 | 一穷的技术文档</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/assets/img/hero.png">
+    <meta name="description" content="一穷的技术文档">
+    
+    <link rel="preload" href="/assets/css/0.styles.495d9abf.css" as="style"><link rel="preload" href="/assets/js/app.d65094bb.js" as="script"><link rel="preload" href="/assets/js/2.0899eaf2.js" as="script"><link rel="preload" href="/assets/js/22.b2cb0e1d.js" as="script"><link rel="prefetch" href="/assets/js/10.84ee6588.js"><link rel="prefetch" href="/assets/js/11.7f56cb3f.js"><link rel="prefetch" href="/assets/js/12.3c8098c8.js"><link rel="prefetch" href="/assets/js/13.676de54f.js"><link rel="prefetch" href="/assets/js/14.4303d122.js"><link rel="prefetch" href="/assets/js/15.62d65c4f.js"><link rel="prefetch" href="/assets/js/16.81d9114e.js"><link rel="prefetch" href="/assets/js/17.5a7edb7b.js"><link rel="prefetch" href="/assets/js/18.42a31cea.js"><link rel="prefetch" href="/assets/js/19.a3ea8948.js"><link rel="prefetch" href="/assets/js/20.c4e574a7.js"><link rel="prefetch" href="/assets/js/21.61095d56.js"><link rel="prefetch" href="/assets/js/23.cf624b42.js"><link rel="prefetch" href="/assets/js/24.10773fdd.js"><link rel="prefetch" href="/assets/js/25.bc9bcd8b.js"><link rel="prefetch" href="/assets/js/26.84a12ea2.js"><link rel="prefetch" href="/assets/js/27.20132d5f.js"><link rel="prefetch" href="/assets/js/28.4d0f29ae.js"><link rel="prefetch" href="/assets/js/29.efbef2cf.js"><link rel="prefetch" href="/assets/js/3.40887c2e.js"><link rel="prefetch" href="/assets/js/30.3a223816.js"><link rel="prefetch" href="/assets/js/31.383df2a0.js"><link rel="prefetch" href="/assets/js/32.53d4bc53.js"><link rel="prefetch" href="/assets/js/33.b87d2fd0.js"><link rel="prefetch" href="/assets/js/34.4b7f2c68.js"><link rel="prefetch" href="/assets/js/35.27769cfd.js"><link rel="prefetch" href="/assets/js/36.66896910.js"><link rel="prefetch" href="/assets/js/37.2330bc70.js"><link rel="prefetch" href="/assets/js/4.9686c1c3.js"><link rel="prefetch" href="/assets/js/5.ec4b3f90.js"><link rel="prefetch" href="/assets/js/6.27888615.js"><link rel="prefetch" href="/assets/js/7.bb36fb71.js"><link rel="prefetch" href="/assets/js/8.4563cd2b.js"><link rel="prefetch" href="/assets/js/9.c734c7d0.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.495d9abf.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/assets/img/hero.png" alt="一穷的技术文档" class="logo"> <span class="site-name can-hide">一穷的技术文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="目录" class="dropdown-title"><span class="title">目录</span> <span class="arrow down"></span></button> <button type="button" aria-label="目录" class="mobile-dropdown-title"><span class="title">目录</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/html/html-1.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/css/css-3.html" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/javascript/js01/js01.html" class="nav-link">
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/html/.html" class="nav-link">
+  node.js
+</a></li><li class="dropdown-item"><!----> <a href="/php/php.html" class="nav-link">
+  php
+</a></li><li class="dropdown-item"><!----> <a href="/vuex/vue01.html" class="nav-link">
+  Vuex
+</a></li><li class="dropdown-item"><!----> <a href="/Webpack/Webpack01.html" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/net/net01.html" class="nav-link">
+  计算机网络
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试资料" class="dropdown-title"><span class="title">面试资料</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试资料" class="mobile-dropdown-title"><span class="title">面试资料</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/interview/html.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/interview/css.html" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/interview/js.html" class="nav-link">
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/interview/ES6.html" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/interview/vue.html" class="nav-link">
+  Vue
+</a></li></ul></div></div><div class="nav-item"><a href="/note/note1.html" class="nav-link">
+  学习笔记
+</a></div><div class="nav-item"><a href="/selfme.html" class="nav-link">
+  关于我
+</a></div><div class="nav-item"><a href="https://github.com/xxfuturexx" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="目录" class="dropdown-title"><span class="title">目录</span> <span class="arrow down"></span></button> <button type="button" aria-label="目录" class="mobile-dropdown-title"><span class="title">目录</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/html/html-1.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/css/css-3.html" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/javascript/js01/js01.html" class="nav-link">
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/html/.html" class="nav-link">
+  node.js
+</a></li><li class="dropdown-item"><!----> <a href="/php/php.html" class="nav-link">
+  php
+</a></li><li class="dropdown-item"><!----> <a href="/vuex/vue01.html" class="nav-link">
+  Vuex
+</a></li><li class="dropdown-item"><!----> <a href="/Webpack/Webpack01.html" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/net/net01.html" class="nav-link">
+  计算机网络
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试资料" class="dropdown-title"><span class="title">面试资料</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试资料" class="mobile-dropdown-title"><span class="title">面试资料</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/interview/html.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/interview/css.html" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/interview/js.html" class="nav-link">
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/interview/ES6.html" class="nav-link">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/interview/vue.html" class="nav-link">
+  Vue
+</a></li></ul></div></div><div class="nav-item"><a href="/note/note1.html" class="nav-link">
+  学习笔记
+</a></div><div class="nav-item"><a href="/selfme.html" class="nav-link">
+  关于我
+</a></div><div class="nav-item"><a href="https://github.com/xxfuturexx" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/html/html-1.html" class="sidebar-link">html基础</a></li><li><a href="/html/html-2.html" aria-current="page" class="active sidebar-link">HTML5新增的标签及其表单属性</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/html/html-2.html#创建表格" class="sidebar-link">创建表格</a></li><li class="sidebar-sub-header"><a href="/html/html-2.html#表单" class="sidebar-link">表单</a></li><li class="sidebar-sub-header"><a href="/html/html-2.html#h5新增的标签及其表单属性" class="sidebar-link">H5新增的标签及其表单属性</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="html5新增的标签及其表单属性"><a href="#html5新增的标签及其表单属性" class="header-anchor">#</a> HTML5新增的标签及其表单属性</h1> <h2 id="创建表格"><a href="#创建表格" class="header-anchor">#</a> 创建表格</h2> <div class="language- extra-class"><pre class="language-text"><code>	&lt;table&gt;
+		&lt;tr&gt;
+			&lt;td&gt;单元格&lt;/td&gt;
+			&lt;td&gt;单元格&lt;/td&gt;
+			&lt;td&gt;单元格&lt;/td&gt;
+		&lt;/tr&gt;	
+		&lt;tr&gt;
+			&lt;td&gt;单元格&lt;/td&gt;
+			&lt;td&gt;单元格&lt;/td&gt;
+			&lt;td&gt;单元格&lt;/td&gt;
+		&lt;/tr&gt;	
+		&lt;tr&gt;
+			&lt;td&gt;单元格&lt;/td&gt;
+			&lt;td&gt;单元格&lt;/td&gt;
+			&lt;td&gt;单元格&lt;/td&gt;
+		&lt;/tr&gt;		
+	&lt;/table&gt;
+</code></pre></div><ol><li>表格至少有三个基本的标签构成 table 代表一个表格 tr代表行 td代表单元格</li> <li>tr必须嵌套在table标签中，td必须嵌套在tr或者th中</li> <li>有几个单元格就代表有几列</li></ol> <h3 id="表格属性"><a href="#表格属性" class="header-anchor">#</a> 表格属性</h3> <div class="language- extra-class"><pre class="language-text"><code>width  表格的宽度 （了解）
+height 表格的高度 （了解）
+border 表格的边框 （了解）
+align  表格的对齐方式 （了解）
+cellspacing 单元格与单元格的间距
+cellpadding	单元格与单元格内容的间距
+</code></pre></div><h3 id="表格的表头标签"><a href="#表格的表头标签" class="header-anchor">#</a> 表格的表头标签</h3> <blockquote><p>在合适的位置将td替换成th即可  th标签相对td来说更有语义性 并且会将内部的文字加粗且居中</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>	&lt;tr&gt;
+		&lt;th&gt;表头1&lt;/th&gt;
+		&lt;th&gt;表头2&lt;/th&gt;
+		&lt;th&gt;表头3&lt;/th&gt;
+	&lt;/tr&gt;
+</code></pre></div><h3 id="表格的结构"><a href="#表格的结构" class="header-anchor">#</a> 表格的结构</h3> <div class="language- extra-class"><pre class="language-text"><code>	&lt;thead&gt;
+		&lt;tr&gt;
+			&lt;th&gt;姓名&lt;/th&gt;
+			&lt;th&gt;年纪&lt;/th&gt;
+			&lt;th&gt;性别&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td&gt;小明&lt;/td&gt;
+			&lt;td&gt;18&lt;/td&gt;
+			&lt;td&gt;男&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;小强&lt;/td&gt;
+			&lt;td&gt;18&lt;/td&gt;
+			&lt;td&gt;女&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+</code></pre></div><p>表格的结构不是一定需要的，但是添加上表格的结构会使表格的语义更明确</p> <h3 id="合并单元格"><a href="#合并单元格" class="header-anchor">#</a> 合并单元格</h3> <p>跨行合并 rowspan 上下合并  将rowspan写在上面的单元格上<br>
+跨列合并 colspan 左右合并  将colspan写在左边的单元格上</p> <p>需要合并几个 这个值就是几  一旦合并了多余的单元格需要删掉多余的单元格</p> <h2 id="表单"><a href="#表单" class="header-anchor">#</a> 表单</h2> <p>作用：收集用户信息发送给后台
+三大组成部分：</p> <ol><li>表单域  （将内部包含的表单信息都收集起来发送给后台）</li> <li>提示文本（提示用户当前表单的输入内容）</li> <li>表单 （真正用来收集用户信息）
+<img src="/assets/html-img/bd.png" height="800" width="800" alt=""></li></ol> <h3 id="表单的分类"><a href="#表单的分类" class="header-anchor">#</a> 表单的分类</h3> <div class="language- extra-class"><pre class="language-text"><code>	&lt;input type=&quot;&quot;&gt;
+	type的取值：
+	text 单行文本输入框
+	password 密码框
+	radio 单选框（在多个里面选择一个） 单选框要生效必须具备name属性 并且同一种类型的单选框的name取值必须一样
+	checkbox 复选框（在多个里面选择某几个）
+	button 普通按钮
+	file 用户上传控件
+	submit 提交按钮
+</code></pre></div><h3 id="其他表单的补充"><a href="#其他表单的补充" class="header-anchor">#</a> 其他表单的补充</h3> <div class="language- extra-class"><pre class="language-text"><code>textarea 多行文本输入框
+select 下拉菜单
+</code></pre></div><h3 id="表单补充"><a href="#表单补充" class="header-anchor">#</a> 表单补充</h3> <div class="language- extra-class"><pre class="language-text"><code>radio和checkbox 默认选中项  checked
+select框的默认选中项 selected
+label标签的使用
+</code></pre></div><h3 id="表单域"><a href="#表单域" class="header-anchor">#</a> 表单域</h3> <div class="language- extra-class"><pre><code>&lt;form action=&quot;&quot;&gt;&lt;/form&gt;
+
+action 提交的后台地址
+method 提交的方法
+</code></pre></div><h2 id="h5新增的标签及其表单属性"><a href="#h5新增的标签及其表单属性" class="header-anchor">#</a> H5新增的标签及其表单属性</h2> <h3 id="h5新增的标签"><a href="#h5新增的标签" class="header-anchor">#</a> H5新增的标签</h3> <div class="language- extra-class"><pre class="language-text"><code>header,nav,section,footer,aside,article  
+
+这些新增的标签不会带来任何视觉效果的改变，它的作用仅是增加了语义性
+
+header 表示header里面包裹的东西是网站的头部区域
+
+nav 表示nav里面包裹的东西是网站的导航
+
+section 表示里面包裹的东西是网页的某一个模块
+
+footet 表示footer标签里面包裹的东西是网页的页脚
+
+aside 表示aside标签里面包裹的东西是网页的侧边栏
+
+article 表示article标签里面包裹的东西是网页的文章页
+
+详细请查阅文档
+</code></pre></div><h3 id="h5新增的表单新属性"><a href="#h5新增的表单新属性" class="header-anchor">#</a> H5新增的表单新属性</h3> <ol><li>placeholder 占位文本</li> <li>autofocus   自动获取焦点</li> <li>autocomplete  自动补全</li> <li>required    自动验证表单</li></ol> <h3 id="h5新增的表单"><a href="#h5新增的表单" class="header-anchor">#</a> H5新增的表单</h3> <div class="language- extra-class"><pre class="language-text"><code>	&lt;input type=&quot;range&quot;&gt;    滑块
+	&lt;input type=&quot;date&quot;&gt;		日期控件
+	&lt;input type=&quot;number&quot;&gt;	唤醒数字键盘
+
+	详细的请查阅文档
+</code></pre></div><h3 id="多媒体标签"><a href="#多媒体标签" class="header-anchor">#</a> 多媒体标签</h3> <h4 id="视频"><a href="#视频" class="header-anchor">#</a> 视频</h4> <p>网页中插入视频有两种方法</p> <ol><li>没有兼容性的 将视频文件上传到第三方网站获取其分享代码放到自己的页面中即可
+<ul><li>优点：没有兼容性</li> <li>缺点：有广告植入</li></ul></li> <li>使用H5新增的video方法</li></ol> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>video</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>视频路径<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+	
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>video</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><ul><li>优点：没有广告</li> <li>缺点：有兼容性，一般运用在手机端</li></ul> <p>video标签的常用属性</p> <ol><li>autoplay  自动播放</li> <li>controls  播放控件</li> <li>loop 	循环播放</li></ol> <p>video的格式支持
+ogg,MP4,webm 不同的浏览器支持的格式不一样，所以出现了一种兼容写法:前提是准备三种格式的视频文件</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>video</span> <span class="token attr-name">autoplay</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>source</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>视频1.ogg<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>source</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>视频1.mp4<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>source</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>视频1.webm<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>你的浏览器不支持video，点击升级吧<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>video</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>浏览器会从上到下依次去读，在这个过程中，只要读到自己识别的视频文件就直接播放这个视频文件，并且不会再往后继续读取
+实测：目前的主流浏览器对Mp4的支持都比较好！！</p> <h4 id="音频"><a href="#音频" class="header-anchor">#</a> 音频</h4> <p>音频的使用和视频的使用基本一致</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>audio</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>source</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>音频1.ogg<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>source</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>音频1.mp3<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>source</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>音频1.webm<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>#<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>你的浏览器不支持audio，点击升级吧<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>audio</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>audio标签的常用属性
+1.autoplay  自动播放
+2.controls  播放控件
+3.loop 	循环播放</p> <h3 id="知识补充"><a href="#知识补充" class="header-anchor">#</a> 知识补充</h3> <h4 id="字符集的设置"><a href="#字符集的设置" class="header-anchor">#</a> 字符集的设置</h4> <p>字符集的核心点就是如果设置了以什么字符集进行读取，那么在保存的时候也需要设置成对应的字符集</p> <p>utf-8 收录了全世界所有国家的语言文字
+gbk 收录的是汉字</p> <p>utf-8 &gt; gbk  所以查询来说的话gbk的查询和存储都小于utf-8
+但是现在国际主流都是utf-8，所以为了后期的考虑，都用utf-8</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最近一次更新时间:</span> <span class="time">2022年3月14日 21:23</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/html/html-1.html" class="prev">
+        html基础
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.d65094bb.js" defer></script><script src="/assets/js/2.0899eaf2.js" defer></script><script src="/assets/js/22.b2cb0e1d.js" defer></script>
+  </body>
+</html>

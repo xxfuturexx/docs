@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>3.2 ES6面试题 | 一穷的技术文档</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/assets/img/hero.png">
+    <meta name="description" content="一穷的技术文档">
+    
+    <link rel="preload" href="/assets/css/0.styles.495d9abf.css" as="style"><link rel="preload" href="/assets/js/app.d65094bb.js" as="script"><link rel="preload" href="/assets/js/2.0899eaf2.js" as="script"><link rel="preload" href="/assets/js/23.cf624b42.js" as="script"><link rel="prefetch" href="/assets/js/10.84ee6588.js"><link rel="prefetch" href="/assets/js/11.7f56cb3f.js"><link rel="prefetch" href="/assets/js/12.3c8098c8.js"><link rel="prefetch" href="/assets/js/13.676de54f.js"><link rel="prefetch" href="/assets/js/14.4303d122.js"><link rel="prefetch" href="/assets/js/15.62d65c4f.js"><link rel="prefetch" href="/assets/js/16.81d9114e.js"><link rel="prefetch" href="/assets/js/17.5a7edb7b.js"><link rel="prefetch" href="/assets/js/18.42a31cea.js"><link rel="prefetch" href="/assets/js/19.a3ea8948.js"><link rel="prefetch" href="/assets/js/20.c4e574a7.js"><link rel="prefetch" href="/assets/js/21.61095d56.js"><link rel="prefetch" href="/assets/js/22.b2cb0e1d.js"><link rel="prefetch" href="/assets/js/24.10773fdd.js"><link rel="prefetch" href="/assets/js/25.bc9bcd8b.js"><link rel="prefetch" href="/assets/js/26.84a12ea2.js"><link rel="prefetch" href="/assets/js/27.20132d5f.js"><link rel="prefetch" href="/assets/js/28.4d0f29ae.js"><link rel="prefetch" href="/assets/js/29.efbef2cf.js"><link rel="prefetch" href="/assets/js/3.40887c2e.js"><link rel="prefetch" href="/assets/js/30.3a223816.js"><link rel="prefetch" href="/assets/js/31.383df2a0.js"><link rel="prefetch" href="/assets/js/32.53d4bc53.js"><link rel="prefetch" href="/assets/js/33.b87d2fd0.js"><link rel="prefetch" href="/assets/js/34.4b7f2c68.js"><link rel="prefetch" href="/assets/js/35.27769cfd.js"><link rel="prefetch" href="/assets/js/36.66896910.js"><link rel="prefetch" href="/assets/js/37.2330bc70.js"><link rel="prefetch" href="/assets/js/4.9686c1c3.js"><link rel="prefetch" href="/assets/js/5.ec4b3f90.js"><link rel="prefetch" href="/assets/js/6.27888615.js"><link rel="prefetch" href="/assets/js/7.bb36fb71.js"><link rel="prefetch" href="/assets/js/8.4563cd2b.js"><link rel="prefetch" href="/assets/js/9.c734c7d0.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.495d9abf.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/assets/img/hero.png" alt="一穷的技术文档" class="logo"> <span class="site-name can-hide">一穷的技术文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="目录" class="dropdown-title"><span class="title">目录</span> <span class="arrow down"></span></button> <button type="button" aria-label="目录" class="mobile-dropdown-title"><span class="title">目录</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/html/html-1.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/css/css-3.html" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/javascript/js01/js01.html" class="nav-link">
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/interview/.html" class="nav-link">
+  node.js
+</a></li><li class="dropdown-item"><!----> <a href="/php/php.html" class="nav-link">
+  php
+</a></li><li class="dropdown-item"><!----> <a href="/vuex/vue01.html" class="nav-link">
+  Vuex
+</a></li><li class="dropdown-item"><!----> <a href="/Webpack/Webpack01.html" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/net/net01.html" class="nav-link">
+  计算机网络
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试资料" class="dropdown-title"><span class="title">面试资料</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试资料" class="mobile-dropdown-title"><span class="title">面试资料</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/interview/html.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/interview/css.html" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/interview/js.html" class="nav-link">
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/interview/ES6.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/interview/vue.html" class="nav-link">
+  Vue
+</a></li></ul></div></div><div class="nav-item"><a href="/note/note1.html" class="nav-link">
+  学习笔记
+</a></div><div class="nav-item"><a href="/selfme.html" class="nav-link">
+  关于我
+</a></div><div class="nav-item"><a href="https://github.com/xxfuturexx" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="目录" class="dropdown-title"><span class="title">目录</span> <span class="arrow down"></span></button> <button type="button" aria-label="目录" class="mobile-dropdown-title"><span class="title">目录</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/html/html-1.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/css/css-3.html" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/javascript/js01/js01.html" class="nav-link">
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/interview/.html" class="nav-link">
+  node.js
+</a></li><li class="dropdown-item"><!----> <a href="/php/php.html" class="nav-link">
+  php
+</a></li><li class="dropdown-item"><!----> <a href="/vuex/vue01.html" class="nav-link">
+  Vuex
+</a></li><li class="dropdown-item"><!----> <a href="/Webpack/Webpack01.html" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/net/net01.html" class="nav-link">
+  计算机网络
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试资料" class="dropdown-title"><span class="title">面试资料</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试资料" class="mobile-dropdown-title"><span class="title">面试资料</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/interview/html.html" class="nav-link">
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/interview/css.html" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/interview/js.html" class="nav-link">
+  javascript
+</a></li><li class="dropdown-item"><!----> <a href="/interview/ES6.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/interview/vue.html" class="nav-link">
+  Vue
+</a></li></ul></div></div><div class="nav-item"><a href="/note/note1.html" class="nav-link">
+  学习笔记
+</a></div><div class="nav-item"><a href="/selfme.html" class="nav-link">
+  关于我
+</a></div><div class="nav-item"><a href="https://github.com/xxfuturexx" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>3.2 ES6面试题</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/interview/ES6.html#_3-2-es6面试题" class="sidebar-link">3.2 ES6面试题</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/interview/ES6.html#面试题-var、let、const区别⭐⭐⭐" class="sidebar-link">面试题：var、let、const区别⭐⭐⭐</a></li><li class="sidebar-sub-header"><a href="/interview/ES6.html#_17-面试题-箭头函数和普通函数有什么区别-⭐⭐" class="sidebar-link">17. 面试题：箭头函数和普通函数有什么区别？ ⭐⭐</a></li><li class="sidebar-sub-header"><a href="/interview/ES6.html#面试题-promise有几种状态" class="sidebar-link">面试题：Promise有几种状态</a></li><li class="sidebar-sub-header"><a href="/interview/ES6.html#_16-es6异步编程-promise和async-await-⭐⭐⭐-忘-0" class="sidebar-link">16. ES6异步编程:Promise和async await ⭐⭐⭐（忘）0</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="_3-2-es6面试题"><a href="#_3-2-es6面试题" class="header-anchor">#</a> 3.2 ES6面试题</h2> <h3 id="面试题-var、let、const区别⭐⭐⭐"><a href="#面试题-var、let、const区别⭐⭐⭐" class="header-anchor">#</a> 面试题：var、let、const区别⭐⭐⭐</h3> <div class="language- extra-class"><pre class="language-text"><code>var、let、const 共同点都是可以声明变量的
+
+区别一：
+	var 具有变量提升机制
+	let和const没有变量提升的机制
+区别二：
+	var 可以多次声明同一个变量
+	let和const不可以多次声明同一个变量
+区别三：
+	var、let是声明变量的
+	const是声明常量（常量的赋值不可以修改）
+	var和let声明的变量可以再次赋值，但是const不可以再次赋值了
+区别四：
+  	 var声明的变量没有自身作用域
+  	 let和const声明的变量有自身的块级作用域
+
+
+ let声明的变量只在所处于的块级作用域有效
+ if(true){
+   		let a = 20;//  let声明的变量只在所处于的块级作用域有效
+ }
+ console.log(a);// 访问不了
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code>区别二：
+	<span class="token keyword">var</span> 可以多次声明同一个变量
+	<span class="token keyword">let</span>和<span class="token keyword">const</span>不可以多次声明同一个变量
+<span class="token comment">// var 可以多次声明同一个变量</span>
+        <span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token comment">// 2</span>
+<span class="token comment">// let和const不可以多次声明同一个变量</span>
+        <span class="token keyword">let</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token keyword">let</span> a <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token comment">// 报错</span>
+</code></pre></div><p>​			面试题：作用域考题</p> <div class="language- extra-class"><pre class="language-text"><code>1. 作用域：先在本层找，本层找不到向外一层查找 【作用域链】
+	注意let 和 const 有自身作用域
+2. 注意：变量提升【悬挂声明】
+	let和const没有提升
+3. 优先级
+	声明变量 &gt; 函数的声明 &gt; 参数 &gt; 变量提升
+4. js没有块级作用域（除了函数）
+	注意let 和 const 有自身作用域
+</code></pre></div><p>考题一：</p> <div class="language-js extra-class"><pre class="language-js"><code>        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> a <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// undefined</span>
+        <span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> a <span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 报错</span>
+        <span class="token keyword">let</span> a <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span> 
+</code></pre></div><p>考题二：</p> <div class="language-js extra-class"><pre class="language-js"><code>        <span class="token comment">// var</span>
+        <span class="token keyword">function</span> <span class="token function">demo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">var</span> b <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span> <span class="token boolean">true</span> <span class="token punctuation">)</span><span class="token punctuation">{</span>
+                <span class="token keyword">var</span> b <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> b <span class="token punctuation">)</span> <span class="token comment">// 2</span>
+        <span class="token punctuation">}</span>
+        <span class="token function">demo</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">// let有块级作用域</span>
+        <span class="token keyword">function</span> <span class="token function">demo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">let</span> b <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span> <span class="token boolean">true</span> <span class="token punctuation">)</span><span class="token punctuation">{</span>
+                <span class="token keyword">let</span> b <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> b <span class="token punctuation">)</span> <span class="token comment">// 1</span>
+        <span class="token punctuation">}</span>
+        <span class="token function">demo</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div><p>考题三：</p> <div class="language-js extra-class"><pre class="language-js"><code>        <span class="token keyword">const</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
+            a<span class="token operator">:</span><span class="token number">1</span>
+        <span class="token punctuation">}</span>
+        obj <span class="token operator">=</span> <span class="token punctuation">{</span>
+            b<span class="token operator">:</span><span class="token number">2</span>
+        <span class="token punctuation">}</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span> <span class="token comment">// 报错常量不能重新赋值</span>
+
+<span class="token comment">//2.</span>
+        <span class="token keyword">const</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
+            a<span class="token operator">:</span><span class="token number">1</span>
+        <span class="token punctuation">}</span>
+        obj<span class="token punctuation">.</span>a <span class="token operator">=</span> <span class="token number">22</span><span class="token punctuation">;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span> <span class="token comment">// {a: 22}常量不能重新赋值但是可以修改值</span>
+<span class="token comment">//3.</span>
+        <span class="token keyword">const</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span>
+        arr<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">88</span><span class="token punctuation">;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>arr<span class="token punctuation">)</span> <span class="token comment">//[88, 2, 3]常量不能重新赋值但是可以修改值</span>
+</code></pre></div><p>​				面试题：将下列对象进行合并</p> <h3 id="_17-面试题-箭头函数和普通函数有什么区别-⭐⭐"><a href="#_17-面试题-箭头函数和普通函数有什么区别-⭐⭐" class="header-anchor">#</a> 17. 面试题：箭头函数和普通函数有什么区别？ ⭐⭐</h3> <p>arguments 似数组非数组</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">abc</span><span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span>b<span class="token punctuation">,</span>c</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">var</span> len <span class="token operator">=</span> arguments<span class="token punctuation">.</span>length<span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>len<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>arguments<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>arguments<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token function">abc</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 3 , 1 , 2</span>
+ 
+<span class="token comment">//长度为3，第一个值为1，第二个值为2...  看来是具有对应关系的</span>
+</code></pre></div><p>就是在函数中，无需明确指出参数名，arguments能直接访问它</p> <div class="language- extra-class"><pre class="language-text"><code>function abc(){
+    var a = arguments;
+    var num = arguments[0] + arguments[1] + arguments[2]; //这里可以用循环，为方便查看，拆开了写，你懂的
+    console.log(num);
+}
+abc(1,2,3); // 6  说明可以获取
+ 
+//正常来说，函数没有参数，应该是要报错的，如果能成功运行，说明它具备这个功能
+</code></pre></div><p>面试题：箭头函数和普通函数有什么区别？https://www.cnblogs.com/biubiuxixiya/p/8610594.html</p> <div class="language- extra-class"><pre class="language-text"><code>1.this指向的问题
+  箭头函数中的this只在箭头函数定义时就决定的，而且不可修改的(call、apply、bind都不能改变箭头函数this指向)
+  箭头函数的this是指向定义的时候、外层的第一个普通函数的this
+2.箭头函数不能new(不能当作构造函数)，普通函数可以new
+3.箭头函数没有原型prototype，普通函数只要声明系统内置prototype
+4.箭头函数没有arguments
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code>        <span class="token keyword">let</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
+            <span class="token function-variable function">a</span><span class="token operator">:</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> <span class="token keyword">this</span> <span class="token punctuation">)</span> <span class="token comment">// {a: ƒ, b: ƒ}</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token function-variable function">b</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+                console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> <span class="token keyword">this</span> <span class="token punctuation">)</span> <span class="token comment">// window对象 箭头函数的this是指向定义的时候、外层的第一个普通函数的this,即window对象</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        obj<span class="token punctuation">.</span><span class="token function">a</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        obj<span class="token punctuation">.</span><span class="token function">b</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code>       
+		<span class="token comment">//1.</span>
+		<span class="token keyword">let</span> obj2 <span class="token operator">=</span> <span class="token punctuation">{</span>
+            <span class="token function-variable function">a</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                <span class="token keyword">return</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> <span class="token keyword">this</span> <span class="token punctuation">)</span> <span class="token comment">// 闭包function指向window</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        obj2<span class="token punctuation">.</span><span class="token function">a</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+		<span class="token comment">// 2. </span>
+        <span class="token keyword">let</span> obj2 <span class="token operator">=</span> <span class="token punctuation">{</span>
+            <span class="token function-variable function">a</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> <span class="token keyword">this</span> <span class="token punctuation">)</span> <span class="token comment">// {a: ƒ} 闭包箭头函数this指向对象obj2</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        obj2<span class="token punctuation">.</span><span class="token function">a</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+		<span class="token comment">// 3.</span>
+		<span class="token keyword">let</span> obj2 <span class="token operator">=</span> <span class="token punctuation">{</span>
+            <span class="token function-variable function">a</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> <span class="token keyword">this</span> <span class="token punctuation">)</span> <span class="token comment">// {a: ƒ} this指向对象obj2</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        obj2<span class="token punctuation">.</span><span class="token function">a</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span> window <span class="token punctuation">)</span> <span class="token comment">// 箭头函数中的this只在箭头函数定义时就决定的，而且不可修改的(call、apply、bind都不能改变箭头函数this指向)</span>
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code>        <span class="token comment">/*
+         	2.箭头函数不能new(不能当作构造函数)
+			3.箭头函数没有原型prototype
+        */</span> 
+        <span class="token keyword">let</span> <span class="token function-variable function">run</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token number">1111</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> run<span class="token punctuation">.</span>prototype <span class="token punctuation">)</span> <span class="token comment">// undefined 3.箭头函数没有原型prototype</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> <span class="token keyword">new</span> <span class="token class-name">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">// 报错 2.箭头函数不能new(不能当作构造函数)</span>
+        
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>        // 4.4.箭头函数没有arguments
+        let run = () =&gt;{
+            console.log( arguments ) // arguments is not defined
+        }
+        run()
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 补充 箭头函数中的this只在箭头函数定义时就决定的，而且不可修改的(call、apply、bind)</span>
+<span class="token comment">//1.</span>
+        <span class="token keyword">function</span> <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> <span class="token keyword">this</span><span class="token punctuation">)</span> <span class="token comment">// this指向window</span>
+            <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+               console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> <span class="token keyword">this</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment">// this指向window</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+
+<span class="token comment">//2.</span>
+        <span class="token keyword">function</span> <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> <span class="token keyword">this</span><span class="token punctuation">)</span> <span class="token comment">// {a: 1} obj对象 改变的是fn函数的this指向，本来指向window</span>
+            <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+               console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> <span class="token keyword">this</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// {a: 1} obj对象</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">const</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span> a<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">}</span>
+        <span class="token keyword">const</span> res <span class="token operator">=</span> <span class="token function">fn</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span> obj <span class="token punctuation">)</span> <span class="token comment">// 修改了外层作用域的this，call改变的是fn函数的this指向，不是箭头函数的this指向</span>
+        <span class="token function">res</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div><p>补充知识点：https://blog.csdn.net/baidu_41828042/article/details/104486364</p> <div class="language-js extra-class"><pre class="language-js"><code>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span>	<span class="token comment">// window</span>
+<span class="token keyword">let</span> <span class="token function-variable function">fun</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span>		
+<span class="token punctuation">}</span>
+box<span class="token punctuation">.</span>onclick <span class="token operator">=</span> fun		<span class="token comment">// this 指向 window</span>
+
+
+box<span class="token punctuation">.</span><span class="token function-variable function">onclick</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">let</span> <span class="token function-variable function">fun</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+		console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span>	<span class="token comment">// this 指向 box 箭头this的指向和外部保持一致</span>
+	<span class="token punctuation">}</span> 
+	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span>		<span class="token comment">// this 指向 box</span>
+    <span class="token function">fun</span><span class="token punctuation">(</span><span class="token punctuation">)</span>	
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 普通匿名函数</span>
+box<span class="token punctuation">.</span><span class="token function-variable function">onclick</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">let</span> <span class="token function-variable function">fun</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span>	<span class="token comment">// this 指向window</span>
+	<span class="token punctuation">}</span>
+	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span>		<span class="token comment">// this 指向 box</span>
+    <span class="token function">fun</span><span class="token punctuation">(</span><span class="token punctuation">)</span>	<span class="token comment">// window.fun() 现在明白了没</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ul><li>从上面的代码，我们可以看到，在触发类型事件内，定义了一个箭头函数，它的this 指向了 事件源 box，而在该触发类型事件内定义匿名函数，它的this指向的是 全局window，这是为什么呢?</li> <li>从概念上看，箭头this的指向和外部保持一致，此时定义的箭头函数外部，即为box的事件函数内部，而事件函数内部的this此时是指向的 box，箭头函数的this也指向了box，完成与外部保持一致，所以console.log两次都是 box。而通过匿名函数方式定义的函数的this，和定义的位置没有关系，和它的调用者有关，fun函数是通过fun()调用的，那么它的this指向的就是window，不明白没关系。 0.0， window.fun() 现在明白了没。</li></ul> <h3 id="面试题-promise有几种状态"><a href="#面试题-promise有几种状态" class="header-anchor">#</a> 面试题：Promise有几种状态</h3> <div class="language- extra-class"><pre class="language-text"><code>Promise有几种状态
+1. 有三种状态：pending（进行中）、fulfilled\resolved（已成功）和rejected（已失败）。
+2. Promise是来解决异步编程的（ 代码如果一直嵌套【会形成回调地狱】，易读性很差）
+</code></pre></div><h3 id="_16-es6异步编程-promise和async-await-⭐⭐⭐-忘-0"><a href="#_16-es6异步编程-promise和async-await-⭐⭐⭐-忘-0" class="header-anchor">#</a> 16. ES6异步编程:Promise和async await ⭐⭐⭐（忘）0</h3> <div class="language- extra-class"><pre class="language-text"><code>Promise 对象是 CommonJS 工作组提出的一种规范，目的是为异步编程提供统一接口。每 一个异步任务返回一个 Promise 对象，该对象有一个 then 方法，允许指定回调函数。 f1().then(f2); 一个 promise 有三种状态：等待（pending）、已完成（resolved，又称 fulfilled）、 已拒绝（rejected）。
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>// 其他视频版本
+Promise有几种状态
+1. 有三种状态：pending（进行中）、fulfilled\resolved（已成功）和rejected（已失败）。
+2. Promise是来解决异步编程的（ 代码如果一直嵌套【会形成回调地狱】，易读性很差）
+async/await是基于Promise实现的
+使用async函数可以让代码简洁很多，不需要像Promise一样需要些then，不需要写匿名函数处理Promise的resolve值，也不需要定义多余的data变量，还避免了嵌套代码
+</code></pre></div><p>https://juejin.cn/post/6844904036546641934#heading-14</p> <p>https://www.cnblogs.com/Ann-web-1/p/11250717.html</p> <div class="language-js extra-class"><pre class="language-js"><code> <span class="token comment">//加了async await</span>
+<span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">foo</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">await</span> Promise<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">resolve</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;1&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//1 3</span>
+</code></pre></div><p><strong>什么是Async/Await?</strong></p> <p>async/await是写异步代码的新方式，以前的方法有回调函数和Promise。
+　　async/await是基于Promise实现的，它不能用于普通的回调函数。
+　　async/await与Promise一样，是非阻塞的。
+　　async/await使得异步代码看起来像同步代码，这正是它的魔力所在。</p> <p><strong>区别：</strong></p> <p>1）函数前面多了一个aync关键字。await关键字只能用在aync定义的函数内。async函数会隐式地返回一个promise，该promise的reosolve值就是函数return的值。(示例中reosolve值就是字符串”done”)</p> <p><strong>为什么Async/Await更好？</strong></p> <p>1）使用async函数可以让代码简洁很多，不需要像Promise一样需要些then，不需要写匿名函数处理Promise的resolve值，也不需要定义多余的data变量，还避免了嵌套代码。</p> <p>2） 错误处理：
+　　　　Async/Await 让 try/catch 可以同时处理同步和异步错误。</p> <p>​</p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.d65094bb.js" defer></script><script src="/assets/js/2.0899eaf2.js" defer></script><script src="/assets/js/23.cf624b42.js" defer></script>
+  </body>
+</html>
